@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import TextLoop from "react-text-loop";
 
-import Aboutme from './Components/AboutMe/Aboutme';
+import Aboutme from './Components/ProjectSection/ProjectSection';
 
 const Background = styled.div`
   height: 90vh;
