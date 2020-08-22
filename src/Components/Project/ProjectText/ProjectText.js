@@ -1,19 +1,17 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const ProjectExplainContainer = styled.div`
-    font-size: 1.5em;
+const ProjectTextMargin = styled.div`
+    margin: 7%;
+    width: 60%;
+    height: 70%;
     color: white;
-    margin-left: 1em;
-
-    display: flex;
-    flex-direction: column;
 `;
 
 export default function ProjectText(props) {
     return (
-        <ProjectExplainContainer>
+        <ProjectTextMargin style={{ margin: props.margin }}>
             {props.children}
-        </ProjectExplainContainer>
+        </ProjectTextMargin>
     )
 }

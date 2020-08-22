@@ -3,8 +3,13 @@ import styled from 'styled-components';
 
 import Button from '../Button/Button';
 import ProjectImage from '../Project/ProjectImage/ProjectImage';
+import ProjectCard from '../Project/ProjectCard/ProjectCard';
+import ProjectText from '../Project/ProjectText/ProjectText';
 
-import project1 from './SocialApp.png';
+import SocialApp from './SocialApp.png';
+import FaceRecognition from './FaceRecognition.png';
+
+import Project from '../Project/Project/Project';
 
 const Container = styled.div`
     background-color: #141414;
@@ -26,20 +31,6 @@ const ProjectContainer = styled.div`
     height: 35%;
     position: relative;
     margin: 0% 10% 5% 10%;
-`;
-
-const ProjectCard = styled.div`
-    background-color: #30302e;
-    height: 100%;
-    width: 65%;
-    border-radius: 15px;
-`;
-
-const ProjectTextMargin = styled.div`
-    margin: 7%;
-    width: 60%;
-    height: 70%;
-    color: white;
 `;
 
 const ProjectName = styled.div`
@@ -64,28 +55,38 @@ export default function Projects() {
         <Container>
             <IntroText> My Projects :</IntroText>
             
-            <ProjectContainer>
-                <ProjectCard>
-                    <ProjectTextMargin>
-                        <ProjectName>
-                            FREII SOCIAL MEDIA APP
-                        </ProjectName>
-                        <ProjectExplain>
-                            _This is a full-stack project clone popular social media app like: facebook, twitter.
-                        </ProjectExplain>
-                        <ProjectExplain>
-                            _This websites is built using React for Front-End and Firebase for both Database and Server-Side. 
-                            This websites is designed and built by me to demonstrate my React skills 
-                            as well as the ability to work with complicated web-app that intereact with database, Restful API, State Management...
-                        </ProjectExplain>
-                        <ButtonContainer>
-                            <Button link="" content="View Code" />
-                            <Button link="" content="Live Demo" />
-                        </ButtonContainer>
-                    </ProjectTextMargin>
-                    <ProjectImage src={project1} width="60%" height="85%" top="4%" left="47%"/>
-                </ProjectCard>
-            </ProjectContainer>
+            <Project 
+                projectCard_top="0" 
+                projectCard_left="0"
+                projectText_margin="7%"
+                projectName="FREII SOCIAL MEDIA APP" 
+                ProjectExplainOne="_This is a full-stack project clone popular social media app like: facebook, twitter." 
+                ProjectExplainTwo="_This websites is built using React for Front-End and Firebase for both Database and Server-Side. 
+                This websites is designed and built by me to demonstrate my React skills 
+                as well as the ability to work with complicated web-app that intereact with database, Restful API, State Management Tool,..." 
+                ViewCodeLink="https://github.com/Tris-909/SocialMedia-Clone" 
+                LiveDemoLink="https://socialapp-2c8b0.firebaseapp.com/login" 
+                ProjectPicture={SocialApp} 
+                ProjectPicture_width="60%" 
+                ProjectPicture_height="85%" 
+                ProjectPicture_top="4%"
+                ProjectPicture_left="47%" />
+
+            <Project 
+                projectCard_top="0" 
+                projectCard_left="40%"
+                projectText_margin="7% 7% 7% 35%"
+                projectName="FACE RECOGNITION" 
+                ProjectExplainOne="_This is a full-stack project that work with 3rd company API that allow user to do face-recognition on their picture." 
+                ProjectExplainTwo="_This project is a combination between React for front-end and Postgres SQL for backend + NodeJS for serverside." 
+                ViewCodeLink="https://github.com/Tris-909/Face-Recognition" 
+                LiveDemoLink="https://face-recognition-tris909.herokuapp.com/" 
+                ProjectPicture={FaceRecognition} 
+                ProjectPicture_width="60%" 
+                ProjectPicture_height="85%" 
+                ProjectPicture_top="4%"
+                ProjectPicture_left="0%" />
+                
         </Container>
     )
 }
