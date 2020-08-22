@@ -36,7 +36,7 @@ const NavBarBrand = styled.div`
 `;
 
 const Brand = styled.div`
-    padding: 2rem 0rem 0.75rem 0rem;
+    padding: 1.25rem 0rem 1rem 0rem;
     font-size: 2.5rem;
     color: white;
     cursor: pointer;
@@ -50,7 +50,6 @@ const NavBarOptions = styled.div`
 `;
 
 const NavBarMenuItems = styled.div`
-    margin-top: 1.5em;
     justify-content: flex-end;
     margin-left: auto;
 
@@ -60,7 +59,7 @@ const NavBarMenuItems = styled.div`
 
 const NavItem = styled.a`
     position: relative;
-    padding: 2rem 1remrem 0.75rem 0rem;
+    padding: 1.25rem 0rem 0.75rem 0rem;
     margin-right: 2em;
     color: #fff;
     cursor: pointer;
@@ -80,9 +79,10 @@ export default function Navbar() {
 
                 <NavBarOptions>
                     <NavBarMenuItems>
-                        <NavItem>About Me</NavItem>
                         <NavItem>Projects</NavItem>
+                        <NavItem>About Me</NavItem>
                         <NavItem>Contact</NavItem>
+                        <NavItem>Resume</NavItem>
                     </NavBarMenuItems>
                 </NavBarOptions>
 
