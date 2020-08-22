@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import TextLoop from "react-text-loop";
 
-import Aboutme from './Components/ProjectSection/ProjectSection';
+import Navbar from './Components/Navbar/Navbar';
 
 const Background = styled.div`
-  height: 90vh;
-  background-color: #0a0808;
+  height: 2500px;
+  background-color: #141414;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -16,8 +15,7 @@ const Background = styled.div`
 
 const TextContainer = styled.div`
   width: 100%;
-  height: 70vh;
-  background-color: #0a0808;
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -34,28 +32,37 @@ const FlexContainer = styled.div`
 
 const Text = styled.div`
   color: white;
-  font-size: 3.75em;
-  display: block;
 `;
 
-const SmallerText = styled.div`
-  color: white;
-  font-size: 2em;
+const SmallerText = styled(Text)`
+  font-size: 4em;
+`;
+
+const MainText = styled(Text)`
+  font-size: 7em;
+  letter-spacing: 5px;
+`;
+
+const IconContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
 `;
 
 function App() {
   return (
   <Background>
+    <Navbar /> 
     <TextContainer>
         <FlexContainer>
-          <Text>Hello, I am <TextLoop interval={3500} adjustingSpeed={300}>
-              <span>Tri Tran</span>
-              <span>a Front End Developer</span>
-          </TextLoop></Text> 
-          <SmallerText>I have passion for web development and technologies</SmallerText>
+          <MainText>Hello, I'm Tri Tran</MainText> 
+          <SmallerText>Front End Developer</SmallerText> 
+          <IconContainer>
+            <i className="fab fa-linkedin" style={{color: 'white', fontSize: '2.5rem', cursor: 'pointer'}}></i>
+            <i className="fab fa-github" style={{color: 'white', fontSize: '2.5rem', cursor: 'pointer'}}></i>
+          </IconContainer>
         </FlexContainer>
     </TextContainer>
-    <Aboutme />
   </Background>
   );
 }
