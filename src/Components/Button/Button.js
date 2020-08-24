@@ -26,6 +26,11 @@ color: #000;
     box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
     transition: all 0.4s ease 0s;
 }
+
+@media (max-width: 1400px) {
+    margin: 0px;
+
+}
 `;
 
 

@@ -3,6 +3,7 @@ import React from 'react'
 import ProjectCard from '../ProjectCard/ProjectCard';
 import ProjectText from '../ProjectText/ProjectText';
 import ProjectImage from '../ProjectImage/ProjectImage';
+import ProjectExplainMobile from '../ProjectExplainMobile/ProjectExplainMobile';
 
 import ProjectName from '../Project Utilities/ProjectName';
 import ProjectExplain from '../Project Utilities/ProjectExplain';
@@ -16,6 +17,7 @@ export default function SocialApp({
     projectCard_left,
     projectText_margin,
     projectName,
+    ProjectExplainForMobile,
     ProjectExplainOne,
     ProjectExplainTwo,
     ViewCodeLink,
@@ -29,10 +31,19 @@ export default function SocialApp({
     return (
     <ProjectContainer>
         <ProjectCard top={projectCard_top} left={projectCard_left}>
+            <ProjectImage 
+                src={ProjectPicture} 
+                width={ProjectPicture_width} 
+                height={ProjectPicture_height} 
+                top={ProjectPicture_top} 
+                left={ProjectPicture_left} />
             <ProjectText margin={projectText_margin}>
                 <ProjectName>
                     {projectName}
                 </ProjectName>
+                <ProjectExplainMobile>
+                    {ProjectExplainForMobile}
+                </ProjectExplainMobile>
                 <ProjectExplain>
                     {ProjectExplainOne}
                 </ProjectExplain>
@@ -45,12 +56,6 @@ export default function SocialApp({
                 </ButtonContainer>
             </ProjectText>
         </ProjectCard>
-        <ProjectImage 
-            src={ProjectPicture} 
-            width={ProjectPicture_width} 
-            height={ProjectPicture_height} 
-            top={ProjectPicture_top} 
-            left={ProjectPicture_left} />
     </ProjectContainer>
     )
 }

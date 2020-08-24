@@ -9,8 +9,14 @@ import Project from '../Project/Project/Project';
 
 const Container = styled.div`
     background-color: #141414;
-    height: 2000px;
     width: 100%;
+
+    @media (max-width: 1400px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
 `;
 
 const IntroText = styled.div`
@@ -24,13 +30,14 @@ const IntroText = styled.div`
 export default function Projects() {
     return (
         <Container>
-            <IntroText id="Projects"> My Projects :</IntroText>
+            <IntroText id="Projects"> My Projects </IntroText>
             
             <Project 
                 projectCard_top="0" 
                 projectCard_left="0"
                 projectText_margin="7%"
                 projectName="FREII SOCIAL MEDIA APP" 
+                ProjectExplainForMobile="This is a full-stack web-app built using React and Firebase."
                 ProjectExplainOne="_This is a full-stack project clone popular social media app like: facebook, twitter." 
                 ProjectExplainTwo="_This websites is built using React for Front-End and Firebase for both Database and Server-Side. 
                 This websites is designed and built by me to demonstrate my React skills 
@@ -38,40 +45,42 @@ export default function Projects() {
                 ViewCodeLink="https://github.com/Tris-909/SocialMedia-Clone" 
                 LiveDemoLink="https://socialapp-2c8b0.firebaseapp.com/login" 
                 ProjectPicture={SocialApp} 
-                ProjectPicture_width="60%" 
-                ProjectPicture_height="85%" 
-                ProjectPicture_top="4%"
-                ProjectPicture_left="47%" />
+                ProjectPicture_width="80%" 
+                ProjectPicture_height="75%" 
+                ProjectPicture_top="10%"
+                ProjectPicture_left="70%" />
 
             <Project 
                 projectCard_top="0" 
                 projectCard_left="40%"
                 projectText_margin="7% 7% 7% 35%"
                 projectName="FACE RECOGNITION" 
+                ProjectExplainForMobile="This website allows users to do face-recognition by using a 3rd company API"
                 ProjectExplainOne="_This is a full-stack project that work with 3rd company API that allow user to do face-recognition on their picture." 
                 ProjectExplainTwo="_This project is a combination between React for front-end and Postgres SQL for backend + NodeJS for serverside." 
                 ViewCodeLink="https://github.com/Tris-909/Face-Recognition" 
                 LiveDemoLink="https://face-recognition-tris909.herokuapp.com/" 
                 ProjectPicture={FaceRecognition} 
-                ProjectPicture_width="60%" 
+                ProjectPicture_width="80%" 
                 ProjectPicture_height="85%" 
                 ProjectPicture_top="4%"
-                ProjectPicture_left="0%" />
+                ProjectPicture_left="-50%" />
             
             <Project 
                 projectCard_top="0" 
                 projectCard_left="0%"
                 projectText_margin="7%"
-                projectName="HANDMADE POTTERY LANDING PAGE" 
+                projectName="WORKSHOP LANDING PAGE" 
+                ProjectExplainForMobile="In this project, I have to work with a designer to turn a design from a sketch to a live website that fully responsive."
                 ProjectExplainOne="_This is a landing page designed by Designer Tran Ngoc Phuong Uyen on Figma and built by Front End Developer Tri Tran" 
                 ProjectExplainTwo="_In this project, I have to work closely with the designer to turn a sketch to a live landing page that is fully responsive" 
                 ViewCodeLink="https://github.com/Tris-909/HandmadePottery-LandingPage" 
                 LiveDemoLink="https://tris-909.github.io/HandmadePottery-LandingPage/HandPottery.html" 
                 ProjectPicture={HandmadePottery} 
-                ProjectPicture_width="60%" 
+                ProjectPicture_width="80%" 
                 ProjectPicture_height="85%" 
                 ProjectPicture_top="4%"
-                ProjectPicture_left="47%" />
+                ProjectPicture_left="70%" /> 
 
         </Container>
     )

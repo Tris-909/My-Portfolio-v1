@@ -26,9 +26,9 @@ function App() {
   <Background>
     <Navbar /> 
     <Home />
-    {/* <Projects />
-    <Aboutme />
-    <ContactMe /> */}
+    <Projects /> 
+    {/* <Aboutme />
+    <ContactMe />  */}
   </Background>
   );
 }
