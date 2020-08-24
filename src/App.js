@@ -4,9 +4,11 @@ import styled from 'styled-components';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Projects from './Components/ProjectSection/ProjectSection';
+import Aboutme from './Components/Aboutme/Aboutme';
+import ContactMe from './Components/ContactMe/ContactMe';
 
 const Background = styled.div`
-  height: 2500px;
+  height: 4500px;
   background-color: #141414;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -21,6 +23,8 @@ function App() {
     <Navbar /> 
     <Home />
     <Projects />
+    <Aboutme />
+    <ContactMe />
   </Background>
   );
 }

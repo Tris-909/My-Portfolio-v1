@@ -1,19 +1,15 @@
 import React from 'react'
 import styled from 'styled-components';
 
-import Button from '../Button/Button';
-import ProjectImage from '../Project/ProjectImage/ProjectImage';
-import ProjectCard from '../Project/ProjectCard/ProjectCard';
-import ProjectText from '../Project/ProjectText/ProjectText';
-
 import SocialApp from './SocialApp.png';
 import FaceRecognition from './FaceRecognition.png';
+import HandmadePottery from './HandmadePottery.png';
 
 import Project from '../Project/Project/Project';
 
 const Container = styled.div`
     background-color: #141414;
-    height: 1500px;
+    height: 2000px;
     width: 100%;
 `;
 
@@ -25,35 +21,10 @@ const IntroText = styled.div`
     margin-left: 10%;
 `;
 
-const ProjectContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    height: 35%;
-    position: relative;
-    margin: 0% 10% 5% 10%;
-`;
-
-const ProjectName = styled.div`
-    font-size: 3.5em;
-    font-weight: 600;
-`;
-
-const ProjectExplain = styled.div`
-    font-size: 1.5em;
-    margin-top: 1rem;
-`;
-
-const ButtonContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    column-gap: 2em;
-    margin-top: 1em;
-`;
-
 export default function Projects() {
     return (
         <Container>
-            <IntroText> My Projects :</IntroText>
+            <IntroText id="Projects"> My Projects :</IntroText>
             
             <Project 
                 projectCard_top="0" 
@@ -86,7 +57,22 @@ export default function Projects() {
                 ProjectPicture_height="85%" 
                 ProjectPicture_top="4%"
                 ProjectPicture_left="0%" />
-                
+            
+            <Project 
+                projectCard_top="0" 
+                projectCard_left="0%"
+                projectText_margin="7%"
+                projectName="HANDMADE POTTERY LANDING PAGE" 
+                ProjectExplainOne="_This is a landing page designed by Designer Tran Ngoc Phuong Uyen on Figma and built by Front End Developer Tri Tran" 
+                ProjectExplainTwo="_In this project, I have to work closely with the designer to turn a sketch to a live landing page that is fully responsive" 
+                ViewCodeLink="https://github.com/Tris-909/HandmadePottery-LandingPage" 
+                LiveDemoLink="https://tris-909.github.io/HandmadePottery-LandingPage/HandPottery.html" 
+                ProjectPicture={HandmadePottery} 
+                ProjectPicture_width="60%" 
+                ProjectPicture_height="85%" 
+                ProjectPicture_top="4%"
+                ProjectPicture_left="47%" />
+
         </Container>
     )
 }

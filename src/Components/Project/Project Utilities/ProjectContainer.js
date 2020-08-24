@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ProjectContainerStyled = styled.div`
     display: flex;
     flex-direction: column;
-    height: 35%;
+    height: 525px;
     position: relative;
     margin: 0% 10% 5% 10%;
 `;

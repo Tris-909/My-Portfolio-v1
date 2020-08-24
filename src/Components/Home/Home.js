@@ -39,7 +39,7 @@ const IconContainer = styled.div`
 
 export default function Home() {
     return (
-    <TextContainer>
+    <TextContainer id="Home">
         <FlexContainer>
           <MainText>Hello, I'm Tri Tran</MainText> 
           <SmallerText>Front End Developer</SmallerText> 

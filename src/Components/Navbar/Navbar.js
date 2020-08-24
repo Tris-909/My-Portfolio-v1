@@ -35,7 +35,7 @@ const NavBarBrand = styled.div`
     display: flex;
 `;
 
-const Brand = styled.div`
+const Brand = styled.a`
     padding: 1.25rem 0rem 1rem 0rem;
     font-size: 2.5rem;
     color: white;
@@ -66,6 +66,7 @@ const NavItem = styled.a`
     font-size: 2rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    text-decoration: none;
 `;
 
 export default function Navbar() {
@@ -74,13 +75,13 @@ export default function Navbar() {
             <NavBarContainer>
                 
                 <NavBarBrand>
-                    <Brand>TriTran</Brand>
+                    <Brand href="#Home">TriTran</Brand>
                 </NavBarBrand>
 
                 <NavBarOptions>
                     <NavBarMenuItems>
-                        <NavItem>Projects</NavItem>
-                        <NavItem>About Me</NavItem>
+                        <NavItem href="#Projects">Projects</NavItem>
+                        <NavItem href="#Aboutme">About Me</NavItem>
                         <NavItem>Contact</NavItem>
                         <NavItem>Resume</NavItem>
                     </NavBarMenuItems>
