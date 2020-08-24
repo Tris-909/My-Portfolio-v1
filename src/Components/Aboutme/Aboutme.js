@@ -2,10 +2,9 @@ import React from 'react'
 import styled from 'styled-components';
 
 const AboutMeContainer = styled.div`
-    width: 80%;
-    height: 600px;
+    width: 90%;
     border-radius: 15px;
-    margin: 0% 10% 5% 10%;
+    margin: 25% 5% 5% 5%;
     z-index: 1;
     position: relative;
 
@@ -13,6 +12,14 @@ const AboutMeContainer = styled.div`
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
     grid-template-areas: "White Black";
+
+    @media (max-width: 1330px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "White" 
+                             "Black";
+    }
 `;
 
 const WhiteBackground = styled.div`
@@ -23,9 +30,13 @@ const WhiteBackground = styled.div`
 const TextArea = styled.div`
     width: 80%;
     height: 80%;
-    position: relative;
-    top: 5%;
-    left: 10%;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+
+    @media (max-width: 1330px) {
+        height: 100%;
+    }
 `;
 
 const BlackBackground = styled.div`
@@ -34,6 +45,10 @@ const BlackBackground = styled.div`
 
     diplay: flex;
     flex-direction: column;
+
+    @media (max-width: 1330px) {
+        height: 100%;
+    }
 `;
 
 const BlackText = styled.div`
@@ -41,6 +56,10 @@ const BlackText = styled.div`
     color: black;
     font-size: 32px;
     margin-bottom: 20px;
+
+    @media (max-width: 400px) {
+        font-size: 28px;
+    }
 `;
 
 const SkillsContainer = styled.div`
@@ -48,6 +67,12 @@ const SkillsContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+
+    @media (max-width: 650px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 `;
 
 const SubTitle = styled.div`
@@ -62,6 +87,10 @@ const WhiteText = styled.div`
     font-family: 'Open Sans Condensed', sans-serif;
     color: white;
     font-size: 28px;
+
+    @media (max-width: 380px) {
+        font-size: 24px;
+    }
 `; 
 
 const Title = styled.div`
@@ -84,7 +113,7 @@ export default function Aboutme() {
                 </TextArea>
             </WhiteBackground>
             <BlackBackground>
-                <TextArea style={{width: '90%'}}>
+                <TextArea>
                     <Title style={{ color: 'white' }}>My Skills :</Title>
                     <SubTitle> Front-End : </SubTitle>
                     <SkillsContainer>

@@ -27,8 +27,8 @@ function App() {
     <Navbar /> 
     <Home />
     <Projects /> 
-    {/* <Aboutme />
-    <ContactMe />  */}
+    <Aboutme />
+    {/* <ContactMe />  */}
   </Background>
   );
 }
