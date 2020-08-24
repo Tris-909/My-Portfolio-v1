@@ -8,13 +8,13 @@ import Aboutme from './Components/Aboutme/Aboutme';
 import ContactMe from './Components/ContactMe/ContactMe';
 
 const Background = styled.div`
-  height: 4500px;
   background-color: #141414;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   margin-top: -2em;
   font-family: 'Open Sans Condensed', sans-serif;
+  padding-bottom: 5rem;
 `;
 
 function App() {

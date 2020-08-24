@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
+import BurgerIcon from './BurgerIcon';
 
 const FixedNavBar = styled.nav`
+    width: 100%;
     align-items: center;
     display: flex;
 
@@ -43,50 +45,14 @@ const Brand = styled.a`
     text-decoration: none;
 `;
 
-const NavBarOptions = styled.div`
-    flex-grow: 1;
-    align-items: center;
-    display: flex;
-`;
-
-const NavBarMenuItems = styled.div`
-    justify-content: flex-end;
-    margin-left: auto;
-
-    align-items: center;
-    display: flex;
-`;
-
-const NavItem = styled.a`
-    position: relative;
-    padding: 1.25rem 0rem 0.75rem 0rem;
-    margin-right: 2em;
-    color: #fff;
-    cursor: pointer;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-decoration: none;
-`;
-
 export default function Navbar() {
     return (
         <FixedNavBar>
-            <NavBarContainer>
-                
+            <NavBarContainer> 
                 <NavBarBrand>
                     <Brand href="#Home">TriTran</Brand>
                 </NavBarBrand>
-
-                <NavBarOptions>
-                    <NavBarMenuItems>
-                        <NavItem href="#Projects">Projects</NavItem>
-                        <NavItem href="#Aboutme">About Me</NavItem>
-                        <NavItem>Contact</NavItem>
-                        <NavItem>Resume</NavItem>
-                    </NavBarMenuItems>
-                </NavBarOptions>
-
+                <BurgerIcon />
             </NavBarContainer>
         </FixedNavBar>
     )

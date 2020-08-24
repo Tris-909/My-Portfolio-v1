@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import styled from 'styled-components';
+import emailjs from 'emailjs-com';
 
 const ContactFormContainer = styled.div`
     width: 80%;
     height: 600px;
     border-radius: 15px;
-    margin: 0% 10% 5% 10%;
+    margin: 0% 10% 0% 10%;
     background-color: #f7faff;
 `;
 
@@ -133,8 +134,28 @@ export default function ContactMe() {
         setMessage(event.target.value);
     }
 
+    const sendMessage = (event) => {
+        event.preventDefault();
+
+        const templateParams = {
+            from_name: name + " (" + email + ")",
+            to_name: 'Tran Minh Tri',
+            message_html: message
+        };
+        
+        emailjs.send('gmail', 'template_KSxjiZig', templateParams, 'user_pYBPiABaQA2DtYNdzP8gL')
+        .then((result) => {
+            console.log(result.text);
+            setEmail('');
+            setName('');
+            setMessage('');
+        }, (error) => {
+            console.log(error.text);
+        });
+    }
+
     return (
-        <ContactFormContainer>
+        <ContactFormContainer id="Contact">
             <MarginContainer>
                 <Title>Contact Me</Title>
                 <InputContainer>
@@ -142,7 +163,7 @@ export default function ContactMe() {
                     <SubTitleContainer> <SubTitle>Gmail :</SubTitle> <Input value={email} onChange={HandlerEmailChange} /> </SubTitleContainer>
                     <SubTitleContainer> <SubTitle>Messages :</SubTitle> <InputTextArea rows="15" value={message} onChange={HandlerMessageChange} /> </SubTitleContainer>
                     <ButtonContainer>
-                        <Button>Submit</Button>
+                        <Button onClick={sendMessage}>Submit</Button>
                     </ButtonContainer>
                 </InputContainer>
             </MarginContainer>
