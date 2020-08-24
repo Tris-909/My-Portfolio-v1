@@ -15,6 +15,10 @@ const Background = styled.div`
   margin-top: -2em;
   font-family: 'Open Sans Condensed', sans-serif;
   padding-bottom: 5rem;
+
+  @media (max-width: 750px) {
+    margin-top: 0px;
+  }
 `;
 
 function App() {
@@ -22,9 +26,9 @@ function App() {
   <Background>
     <Navbar /> 
     <Home />
-    <Projects />
+    {/* <Projects />
     <Aboutme />
-    <ContactMe />
+    <ContactMe /> */}
   </Background>
   );
 }
