@@ -6,12 +6,12 @@ const ContactFormContainer = styled.div`
     width: 80%;
     height: 600px;
     border-radius: 15px;
-    margin: 0% 10% 0% 10%;
+    margin: 0% 10% 5% 10%;
     background-color: #f7faff;
 
     @media (max-width: 560px) {
         width: 90%;
-        margin: 0% 5% 0% 5%;
+        margin: 0% 5% 5% 5%;
         border-radius: 0px;
     }
 `;
