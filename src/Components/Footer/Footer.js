@@ -11,8 +11,6 @@ const FooterTextMargin = styled.div`
     height: 80%;
     margin: 0% 10% 0% 10%;
 
-    background-color: red;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -56,10 +54,10 @@ export default function Footer() {
     return (
         <FooterContainer>
             <FooterTextMargin>
-                <CopyRight>Tran Minh Tri &copy;</CopyRight>
+                <CopyRight>Tran Minh Tri &copy; Copyright</CopyRight>
                 <MoreInformation>
                     <div>tranminhtri9090@gmail.com</div>
-                    <div>041 5985 410</div>
+                    <div>(+61) 041 5985 410</div>
                 </MoreInformation>
             </FooterTextMargin>
         </FooterContainer>
