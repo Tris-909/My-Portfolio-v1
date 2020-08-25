@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const AboutMeContainer = styled.div`
     width: 90%;
     border-radius: 15px;
-    margin: 25% 5% 5% 5%;
+    margin: 7% 5% 5% 5%;
     z-index: 1;
     position: relative;
 
@@ -14,6 +14,7 @@ const AboutMeContainer = styled.div`
     grid-template-areas: "White Black";
 
     @media (max-width: 1330px) {
+        margin: 7% 5% 5% 5%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 const NavBarOptions = styled.div`
     flex-grow: 1;
@@ -31,7 +32,7 @@ const NavBarMenuItems = styled.div`
     }
 `;
 
-const NavItem = styled.a`
+const NavItem = styled(Link)`
     position: relative;
     padding: 1.25rem 0rem 0.75rem 0rem;
     color: #fff;
@@ -61,9 +62,15 @@ export default function RightNav({open}) {
     return (
     <NavBarOptions>
         <NavBarMenuItems open={open}>
-            <NavItem href="#Projects">Projects</NavItem>
-            <NavItem href="#Aboutme">About Me</NavItem>
-            <NavItem href="#Contact">Contact</NavItem>
+            <NavItem activeClass="active" to="Projects" spy={true} smooth={true} offset={50} duration={500}>
+                Projects
+            </NavItem>
+            <NavItem activeClass="active" to="Aboutme" spy={true} smooth={true} offset={50} duration={500}>
+                About Me
+            </NavItem>
+            <NavItem activeClass="active" to="Contact" spy={true} smooth={true} offset={50} duration={500}>
+                Contact
+            </NavItem>
         </NavBarMenuItems>
     </NavBarOptions>
     )

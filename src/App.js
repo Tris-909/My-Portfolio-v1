@@ -28,7 +28,7 @@ function App() {
     <Home />
     <Projects /> 
     <Aboutme />
-    {/* <ContactMe />  */}
+    <ContactMe /> 
   </Background>
   );
 }

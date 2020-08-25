@@ -8,6 +8,12 @@ const ContactFormContainer = styled.div`
     border-radius: 15px;
     margin: 0% 10% 0% 10%;
     background-color: #f7faff;
+
+    @media (max-width: 560px) {
+        width: 90%;
+        margin: 0% 5% 0% 5%;
+        border-radius: 0px;
+    }
 `;
 
 const MarginContainer = styled.div`
@@ -33,6 +39,13 @@ const SubTitleContainer = styled.div`
     display: grid;
     grid-template-columns: 25% 75%;
     grid-template-rows: 1fr;
+
+    @media (max-width: 800px) {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 3%;
+    }
 `;
 
 const SubTitle = styled.div`
@@ -43,6 +56,10 @@ const SubTitle = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
+    @media (max-width: 800px) {
+        display: none;    
+    }
 `;
 
 const InputContainer = styled.div`
@@ -50,7 +67,7 @@ const InputContainer = styled.div`
 `;
 
 const Input = styled.input`
-    width:70%;
+    width: 90%;
     height: 40px;
     margin-left: 20px;
     display: inline-block;
@@ -63,6 +80,11 @@ const Input = styled.input`
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 20px;
         margin-top: 5px;
+        display: none;
+
+        @media (max-width: 800px) {
+            display: initial;    
+        }
     }
 
     &:focus {
@@ -71,7 +93,7 @@ const Input = styled.input`
 `;
 
 const InputTextArea = styled.textarea`
-    width:70%;
+    width: 90%;
     margin-left: 20px;
     display: inline-block;
     border: none;
@@ -84,6 +106,12 @@ const InputTextArea = styled.textarea`
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 20px;
         margin-top: 5px;
+
+        display: none;
+
+        @media (max-width: 800px) {
+            display: initial;    
+        }
     }
 
     &:focus {
@@ -100,8 +128,9 @@ const ButtonContainer = styled.div`
 `;
 
 const Button = styled.button`
-    width: 15%;
-    height: 40px;
+    width: 19%;
+    height: 60px;
+    padding: 10px;
     margin-top: 10px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 25px;
@@ -114,6 +143,10 @@ const Button = styled.button`
     &:hover {
         box-shadow: 0 0.5em 0.5em -0.4em;
         transform: translateY(-0.25em);
+    }
+
+    @media (max-width: 560px) {
+        width: 30%;   
     }
 `;
 
@@ -159,9 +192,9 @@ export default function ContactMe() {
             <MarginContainer>
                 <Title>Contact Me</Title>
                 <InputContainer>
-                    <SubTitleContainer> <SubTitle>Name : </SubTitle><Input value={name} onChange={HandlerNameChange} /> </SubTitleContainer>
-                    <SubTitleContainer> <SubTitle>Gmail :</SubTitle> <Input value={email} onChange={HandlerEmailChange} /> </SubTitleContainer>
-                    <SubTitleContainer> <SubTitle>Messages :</SubTitle> <InputTextArea rows="15" value={message} onChange={HandlerMessageChange} /> </SubTitleContainer>
+                    <SubTitleContainer> <SubTitle>Name : </SubTitle><Input value={name} onChange={HandlerNameChange} placeholder="Your Name" /> </SubTitleContainer>
+                    <SubTitleContainer> <SubTitle>Gmail :</SubTitle> <Input value={email} onChange={HandlerEmailChange} placeholder="Your Gmail" /> </SubTitleContainer>
+                    <SubTitleContainer> <SubTitle>Messages :</SubTitle> <InputTextArea rows="15" value={message} onChange={HandlerMessageChange} placeholder="What is on your mind ?" /> </SubTitleContainer>
                     <ButtonContainer>
                         <Button onClick={sendMessage}>Submit</Button>
                     </ButtonContainer>

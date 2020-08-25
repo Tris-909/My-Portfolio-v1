@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import BurgerIcon from './BurgerIcon';
+import { Link } from 'react-scroll';
 
 const FixedNavBar = styled.nav`
     width: 100%;
@@ -37,7 +38,7 @@ const NavBarBrand = styled.div`
     display: flex;
 `;
 
-const Brand = styled.a`
+const Brand = styled(Link)`
     padding: 1.25rem 0rem 1rem 0rem;
     font-size: 2.5rem;
     color: white;
@@ -50,7 +51,7 @@ export default function Navbar() {
         <FixedNavBar>
             <NavBarContainer> 
                 <NavBarBrand>
-                    <Brand href="#Home">TriTran</Brand>
+                    <Brand activeClass="active" to="Home" spy={true} smooth={true} offset={50} duration={500}>TriTran</Brand>
                 </NavBarBrand>
                 <BurgerIcon />
             </NavBarContainer>
