@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
 
-import SocialApp from './SocialApp.png';
-import FaceRecognition from './FaceRecognition.png';
-import HandmadePottery from './HandmadePottery.png';
+import SocialApp from './SocialApp-min.PNG';
+import FaceRecognition from './FaceRecognition-min.png';
+import HandmadePottery from './HandmadePottery-min.png';
 
 import Project from '../Project/Project/Project';
 
