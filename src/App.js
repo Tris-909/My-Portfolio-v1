@@ -27,7 +27,7 @@ function App() {
     <Navbar /> 
     <Home />
     <Projects /> 
-    <Aboutme />
+    <Aboutme/>
     <ContactMe /> 
     <Footer />
   </Background>

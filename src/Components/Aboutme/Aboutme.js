@@ -107,7 +107,7 @@ export default function Aboutme() {
         <AboutMeContainer id="Aboutme">
             <WhiteBackground>
                 <TextArea>
-                    <Title>About me :</Title>
+                    <Title >About me :</Title>
                     <BlackText><i className="fas fa-angle-right"></i> Hi Again, My full name Tri Minh Tran and I love technologies.</BlackText>
                     <BlackText><i className="fas fa-angle-right"></i> I am a Front End Developer and I have experience of building websites or web-app using HTML, SCSS, React, ...</BlackText>
                     <BlackText><i className="fas fa-angle-right"></i> I am always open to new opportunities to improve myself as a developer.</BlackText>
