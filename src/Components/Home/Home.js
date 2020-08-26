@@ -67,11 +67,15 @@ const MainText = styled(Text)`
 const IconContainer = styled.div`
   display: flex;
   flex-direction: row;
-  column-gap: 2rem;
   margin-top: 1rem;
+
+  a {
+    margin-right: 25%;
+  }
 
   @media (max-width: 750px) {
     margin-left: 10%;
+
   }
 `;
 

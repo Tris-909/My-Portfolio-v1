@@ -10,7 +10,8 @@ border-radius: 5px;
 display: inline-block;
 border: none;
 transition: all 0.4s ease 0s;
-margin: 10px 20px 10px 20px;
+margin-top: 20px;
+margin-right: 8%;
 font-weight: 500;
 font-size: 1.25rem;
 background: #fff;
@@ -27,10 +28,7 @@ color: #000;
     transition: all 0.4s ease 0s;
 }
 
-@media (max-width: 1400px) {
-    margin: 0px;
 
-}
 `;
 
 
