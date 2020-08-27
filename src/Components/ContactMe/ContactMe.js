@@ -62,7 +62,7 @@ const SubTitle = styled.div`
     }
 `;
 
-const InputContainer = styled.div`
+const InputContainer = styled.form`
     width: 100%;
 `;
 
@@ -192,9 +192,9 @@ export default function ContactMe() {
             <MarginContainer>
                 <Title>Contact Me</Title>
                 <InputContainer>
-                    <SubTitleContainer> <SubTitle>Name : </SubTitle><Input value={name} onChange={HandlerNameChange} placeholder="Your Name" /> </SubTitleContainer>
-                    <SubTitleContainer> <SubTitle>Gmail :</SubTitle> <Input value={email} onChange={HandlerEmailChange} placeholder="Your Gmail" /> </SubTitleContainer>
-                    <SubTitleContainer> <SubTitle>Messages :</SubTitle> <InputTextArea rows="15" value={message} onChange={HandlerMessageChange} placeholder="What is on your mind ?" /> </SubTitleContainer>
+                    <SubTitleContainer> <SubTitle>Name : </SubTitle><Input name="name" value={name} onChange={HandlerNameChange} placeholder="Your Name" /> </SubTitleContainer>
+                    <SubTitleContainer> <SubTitle>Gmail :</SubTitle> <Input name="email" value={email} onChange={HandlerEmailChange} placeholder="Your Gmail" /> </SubTitleContainer>
+                    <SubTitleContainer> <SubTitle>Messages :</SubTitle> <InputTextArea name="message" rows="15" value={message} onChange={HandlerMessageChange} placeholder="What is on your mind ?" /> </SubTitleContainer>
                     <ButtonContainer>
                         <Button onClick={sendMessage}>Submit</Button>
                     </ButtonContainer>
