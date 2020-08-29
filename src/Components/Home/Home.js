@@ -40,7 +40,7 @@ const Text = styled.div`
 
 const SmallerText = styled(Text)`
   font-size: 4em;
-  animation: 1.5s ${FadeInRightAnimation} ease-out;
+  animation: 1.25s ${FadeInRightAnimation} ease-out;
 
   @media (max-width: 750px) {
     font-size: 9vw;
@@ -51,7 +51,7 @@ const SmallerText = styled(Text)`
 const MainText = styled(Text)`
   font-size: 7em;
   letter-spacing: 5px;
-  animation: 1.5s ${FadeInLeftAnimation} ease-out;
+  animation: 1.25s ${FadeInLeftAnimation} ease-out;
 
   @media (max-width: 750px) {
     font-size: 17vw;
