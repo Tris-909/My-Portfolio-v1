@@ -42,7 +42,7 @@ export default function Projects() {
                 ProjectExplainOne="_This is a full-stack project clone popular social media app like: facebook, twitter." 
                 ProjectExplainTwo="_This websites is built using React for Front-End and Firebase for both Database and Server-Side. 
                 This websites is designed and built by me to demonstrate my React skills 
-                as well as the ability to work with complicated web-app that intereact with database, Restful API, State Management Tool, Material-UI,..." 
+                and ability to work with complicated web-app that intereact with database, API, Redux , Material-UI,..." 
                 ViewCodeLink="https://github.com/Tris-909/SocialMedia-Clone" 
                 LiveDemoLink="https://socialapp-2c8b0.firebaseapp.com/login" 
                 ProjectPicture={SocialApp} 
