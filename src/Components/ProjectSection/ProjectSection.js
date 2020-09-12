@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import SocialApp from './SocialApp-min.PNG';
 import FaceRecognition from './FaceRecognition-min.png';
 import HandmadePottery from './HandmadePottery-min.png';
+import WeatherApp from './WeatherApp.PNG';
 
 import Project from '../Project/Project/Project';
 
@@ -82,6 +83,22 @@ export default function Projects() {
                 ProjectPicture_height="85%" 
                 ProjectPicture_top="4%"
                 ProjectPicture_left="70%" /> 
+
+            <Project 
+                projectCard_top="0" 
+                projectCard_left="40%"
+                projectText_margin="7% 7% 7% 35%"
+                projectName="WEATHER APP" 
+                ProjectExplainForMobile="This website allows users to see weather forecast of sepcific location"
+                ProjectExplainOne="_This is a project that I have been working on when I were learning NodeJS" 
+                ProjectExplainTwo="_I use HTML, CSS (boostrap), JS for the client-side and NodeJS + Express for server-side." 
+                ViewCodeLink="https://github.com/Tris-909/WeatherApp-Heroku" 
+                LiveDemoLink="https://tris-weather-application.herokuapp.com/" 
+                ProjectPicture={WeatherApp} 
+                ProjectPicture_width="80%" 
+                ProjectPicture_height="85%" 
+                ProjectPicture_top="4%"
+                ProjectPicture_left="-50%" />
 
         </Container>
     )
