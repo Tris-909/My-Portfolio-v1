@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components';
 
 import SocialApp from './SocialApp-min.PNG';
@@ -7,6 +7,7 @@ import HandmadePottery from './HandmadePottery-min.png';
 import WeatherApp from './WeatherApp.PNG';
 
 import Project from '../Project/Project/Project';
+import Seemore from '../Button/Seemore';
 
 const Container = styled.div`
     background-color: #141414;
@@ -29,7 +30,17 @@ const IntroText = styled.div`
     margin-left: 10%;
 `;
 
+const Hidden = styled.div`
+    display: ${props => props.hidden ? "none" : "block"}
+`;
+
 export default function Projects() {
+    const [hidden, setHidden] = useState(true);
+    
+    const hiddenHandlerFunc = () => {
+        setHidden(!hidden);
+    }
+
     return (
         <Container>
             <IntroText id="Projects"> My Projects </IntroText>
@@ -84,6 +95,7 @@ export default function Projects() {
                 ProjectPicture_top="4%"
                 ProjectPicture_left="70%" /> 
 
+            <Hidden hidden={hidden}> 
             <Project 
                 projectCard_top="0" 
                 projectCard_left="40%"
@@ -99,6 +111,8 @@ export default function Projects() {
                 ProjectPicture_height="85%" 
                 ProjectPicture_top="4%"
                 ProjectPicture_left="-50%" />
+            </Hidden>
+            <Seemore hiddenHandler={hiddenHandlerFunc} hidden={hidden} />
 
         </Container>
     )
