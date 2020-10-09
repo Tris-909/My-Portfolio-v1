@@ -5,6 +5,7 @@ import SocialApp from './SocialApp-min.PNG';
 import FaceRecognition from './FaceRecognition-min.png';
 import HandmadePottery from './HandmadePottery-min.png';
 import WeatherApp from './WeatherApp.PNG';
+import CMS_PHP from './CMS-PHP.PNG';
 
 import Project from '../Project/Project/Project';
 import Seemore from '../Button/Seemore';
@@ -67,6 +68,22 @@ export default function Projects() {
                 projectCard_top="0" 
                 projectCard_left="40%"
                 projectText_margin="7% 7% 7% 35%"
+                projectName="Blog CMS" 
+                ProjectExplainForMobile="Full-stack CMS Blogs websites built using PHP and mySQL."
+                ProjectExplainOne="_This is a PHP + mySQL project. I used MAMP and phpMyAdmin to create this web-application then deployed it to heroku." 
+                ProjectExplainTwo="_This project allow users to sign in create blogs and if they are admin, they will have a separated page to see and control all the blogs..." 
+                ViewCodeLink="https://github.com/Tris-909/CMS-PHP" 
+                LiveDemoLink="https://shrouded-springs-90128.herokuapp.com/" 
+                ProjectPicture={CMS_PHP} 
+                ProjectPicture_width="80%" 
+                ProjectPicture_height="85%" 
+                ProjectPicture_top="4%"
+                ProjectPicture_left="-50%" />
+
+            <Project 
+                projectCard_top="0" 
+                projectCard_left="0"
+                projectText_margin="7%"
                 projectName="FACE RECOGNITION" 
                 ProjectExplainForMobile="This website allows users to do face-recognition by using a 3rd company API"
                 ProjectExplainOne="_This is a full-stack project that work with 3rd company API that allow user to do face-recognition on their picture." 
@@ -75,14 +92,15 @@ export default function Projects() {
                 LiveDemoLink="https://face-recognition-tris909.herokuapp.com/" 
                 ProjectPicture={FaceRecognition} 
                 ProjectPicture_width="80%" 
-                ProjectPicture_height="85%" 
-                ProjectPicture_top="4%"
-                ProjectPicture_left="-50%" />
+                ProjectPicture_height="75%" 
+                ProjectPicture_top="10%"
+                ProjectPicture_left="70%" />
             
+            <Hidden hidden={hidden}> 
             <Project 
                 projectCard_top="0" 
-                projectCard_left="0%"
-                projectText_margin="7%"
+                projectCard_left="40%"
+                projectText_margin="7% 7% 7% 35%"
                 projectName="WORKSHOP LANDING PAGE" 
                 ProjectExplainForMobile="In this project, I have to work with a designer to turn a design from a sketch to a live website that fully responsive."
                 ProjectExplainOne="_This is a landing page designed by Designer Tran Ngoc Phuong Uyen on Figma and built by Front End Developer Tri Tran" 
@@ -93,13 +111,14 @@ export default function Projects() {
                 ProjectPicture_width="80%" 
                 ProjectPicture_height="85%" 
                 ProjectPicture_top="4%"
-                ProjectPicture_left="70%" /> 
+                ProjectPicture_left="-50%" /> 
+            </Hidden>
 
             <Hidden hidden={hidden}> 
             <Project 
                 projectCard_top="0" 
-                projectCard_left="40%"
-                projectText_margin="7% 7% 7% 35%"
+                projectCard_left="0"
+                projectText_margin="7%"
                 projectName="WEATHER APP" 
                 ProjectExplainForMobile="This website allows users to see weather forecast of sepcific location"
                 ProjectExplainOne="_This is a project that I have been working on when I were learning NodeJS" 
@@ -108,9 +127,9 @@ export default function Projects() {
                 LiveDemoLink="https://tris-weather-application.herokuapp.com/" 
                 ProjectPicture={WeatherApp} 
                 ProjectPicture_width="80%" 
-                ProjectPicture_height="85%" 
-                ProjectPicture_top="4%"
-                ProjectPicture_left="-50%" />
+                ProjectPicture_height="75%" 
+                ProjectPicture_top="10%"
+                ProjectPicture_left="70%" />
             </Hidden>
             <Seemore hiddenHandler={hiddenHandlerFunc} hidden={hidden} />
 

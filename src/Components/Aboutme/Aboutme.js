@@ -133,6 +133,7 @@ export default function Aboutme() {
                         <WhiteText>_ No SQL Database : Firebase</WhiteText>
                         <WhiteText>_ SQL Database : Postgres</WhiteText>
                         <WhiteText>_ Query Language : MySQL</WhiteText>
+                        <WhiteText>_ Server Side Language : Experience with NodeJS and PHP</WhiteText>
                 </TextArea>
             </BlackBackground>
         </AboutMeContainer>
