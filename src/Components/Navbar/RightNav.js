@@ -48,7 +48,7 @@ const NavItem = styled(Link)`
 
     // HOVER ANIMATION
     background-image: linear-gradient(white, white);
-    background-size: 0 5px, auto;
+    background-size: 0 2px, auto;
     background-repeat: no-repeat;
     background-position: center bottom;
     transition: all .2s ease-out;
