@@ -79,6 +79,7 @@ const Input = styled.input`
     &::placeholder {
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 20px;
+        color: white;
         margin-top: 5px;
         display: none;
 
@@ -106,7 +107,7 @@ const InputTextArea = styled.textarea`
         font-family: 'Open Sans Condensed', sans-serif;
         font-size: 20px;
         margin-top: 5px;
-
+        color: white;
         display: none;
 
         @media (max-width: 800px) {
