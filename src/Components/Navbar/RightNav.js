@@ -46,6 +46,16 @@ const NavItem = styled(Link)`
         margin-right: 2em;
     }
 
+    // HOVER ANIMATION
+    background-image: linear-gradient(white, white);
+    background-size: 0 5px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+    &:hover {
+        background-size: 100% 2px, auto;
+    }
+
     @media (max-width: 750px) {
         padding: 1rem;
         margin-right: 0px;
