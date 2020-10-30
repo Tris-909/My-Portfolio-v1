@@ -118,8 +118,8 @@ export default function Aboutme() {
                     <Title style={{ color: 'white' }}>My Skills :</Title>
                     <SubTitle> Front-End : </SubTitle>
                     <SkillsContainer>
-                        <WhiteText>_ HTML</WhiteText>
-                        <WhiteText>_ CSS, SCSS, SASS</WhiteText>
+                        <WhiteText>_ HTML5 </WhiteText>
+                        <WhiteText>_ CSS3, SCSS, SASS</WhiteText>
                         <WhiteText>_ JS (ES6+)</WhiteText>
                         <WhiteText>_ React, React-Router, Redux</WhiteText>
                         <WhiteText>_ AJAX, RESTful API</WhiteText>
@@ -129,11 +129,9 @@ export default function Aboutme() {
                     </SkillsContainer>
                     <WhiteText>_ Experience with some CSS framework : Styled-Components, Material-UI,...</WhiteText>
 
-                    <SubTitle> Basic Back-End : </SubTitle>
-                        <WhiteText>_ No SQL Database : Firebase</WhiteText>
-                        <WhiteText>_ SQL Database : Postgres</WhiteText>
-                        <WhiteText>_ Query Language : MySQL</WhiteText>
-                        <WhiteText>_ Server Side Language : Experience with NodeJS and PHP</WhiteText>
+                    <SubTitle> Back-End : </SubTitle>
+                        <WhiteText>_ SQL Database : PostgreSQL, MySQL </WhiteText>
+                        <WhiteText>_ Server Side Language : PHP (MAMP) </WhiteText>
                 </TextArea>
             </BlackBackground>
         </AboutMeContainer>
