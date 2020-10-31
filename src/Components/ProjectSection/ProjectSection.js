@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import styled from 'styled-components';
 
 import SocialApp from './SocialApp-min.PNG';
-import FaceRecognition from './FaceRecognition-min.png';
+import FaceRecognition from './Face_mini.PNG';
 import HandmadePottery from './HandmadePottery-min.png';
 import WeatherApp from './WeatherApp.PNG';
 import CMS_PHP from './CMS-PHP.PNG';
@@ -32,7 +32,7 @@ const IntroText = styled.div`
 `;
 
 const Hidden = styled.div`
-    display: ${props => props.hidden ? "none" : "block"}
+    display: ${props => props.hidden ? "none" : "block"};
 `;
 
 export default function Projects() {
@@ -86,8 +86,8 @@ export default function Projects() {
                 projectText_margin="7%"
                 projectName="FACE RECOGNITION" 
                 ProjectExplainForMobile="This website allows users to do face-recognition by using a 3rd company API"
-                ProjectExplainOne="_This is a full-stack project that work with 3rd company API that allow user to do face-recognition on their picture." 
-                ProjectExplainTwo="_This project is a combination between React for front-end and Postgres SQL for backend + NodeJS for serverside." 
+                ProjectExplainOne="_This is project that work with 3rd company API that allow users to do face-recognition on their picture using imageURL." 
+                ProjectExplainTwo="_This was built using ReactJS along with some packages like axios and styled-components..." 
                 ViewCodeLink="https://github.com/Tris-909/Face-Recognition" 
                 LiveDemoLink="https://face-recognition-tris909.herokuapp.com/" 
                 ProjectPicture={FaceRecognition} 
