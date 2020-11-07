@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 
 const ProjectNameStyled = styled.div`
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 600;
 
     @media (max-width: 550px) {
