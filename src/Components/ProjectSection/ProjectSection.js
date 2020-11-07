@@ -10,6 +10,9 @@ import CMS_PHP from './CMS-PHP.PNG';
 import Project from '../Project/Project/Project';
 import Seemore from '../Button/Seemore';
 
+import FadeAnimation from '../Project/ProjectAnimation/FadeBottom';
+
+
 const Container = styled.div`
     background-color: #141414;
     width: 100%;
@@ -46,8 +49,9 @@ export default function Projects() {
         <Container>
             <IntroText id="Projects"> My Projects </IntroText>
             
-            <Project 
-                projectCard_top="0" 
+            <FadeAnimation>
+                <Project 
+                    projectCard_top="0" 
                 projectCard_left="0"
                 projectText_margin="7%"
                 projectName="SOCIAL MEDIA APP" 
@@ -63,9 +67,11 @@ export default function Projects() {
                 ProjectPicture_height="70%" 
                 ProjectPicture_top="10%"
                 ProjectPicture_left="70%" />
+            </FadeAnimation>
 
-            <Project 
-                projectCard_top="0" 
+            <FadeAnimation>
+                <Project 
+                    projectCard_top="0" 
                 projectCard_left="40%"
                 projectText_margin="7% 7% 7% 35%"
                 projectName="Blog CMS (PC Version)" 
@@ -79,9 +85,11 @@ export default function Projects() {
                 ProjectPicture_height="75%" 
                 ProjectPicture_top="7%"
                 ProjectPicture_left="-50%" />
+            </FadeAnimation>
 
-            <Project 
-                projectCard_top="0" 
+            <FadeAnimation>
+                <Project 
+                    projectCard_top="0" 
                 projectCard_left="0"
                 projectText_margin="7%"
                 projectName="FACE RECOGNITION" 
@@ -95,10 +103,12 @@ export default function Projects() {
                 ProjectPicture_height="75%" 
                 ProjectPicture_top="10%"
                 ProjectPicture_left="70%" />
-            
+            </FadeAnimation>
+
             <Hidden hidden={hidden}> 
-            <Project 
-                projectCard_top="0" 
+                <FadeAnimation>
+                    <Project 
+                        projectCard_top="0" 
                 projectCard_left="40%"
                 projectText_margin="7% 7% 7% 35%"
                 projectName="WORKSHOP LANDING PAGE" 
@@ -112,11 +122,13 @@ export default function Projects() {
                 ProjectPicture_height="85%" 
                 ProjectPicture_top="4%"
                 ProjectPicture_left="-50%" /> 
+                </FadeAnimation>
             </Hidden>
 
             <Hidden hidden={hidden}> 
-            <Project 
-                projectCard_top="0" 
+                <FadeAnimation>
+                    <Project 
+                        projectCard_top="0" 
                 projectCard_left="0"
                 projectText_margin="7%"
                 projectName="WEATHER APP" 
@@ -130,9 +142,10 @@ export default function Projects() {
                 ProjectPicture_height="75%" 
                 ProjectPicture_top="10%"
                 ProjectPicture_left="70%" />
+                </FadeAnimation>
             </Hidden>
-            <Seemore hiddenHandler={hiddenHandlerFunc} hidden={hidden} />
 
+            <Seemore hiddenHandler={hiddenHandlerFunc} hidden={hidden} />
         </Container>
-    )
+    );
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Zoom from 'react-reveal/Zoom';
 
 const AboutMeContainer = styled.div`
     width: 90%;
@@ -104,6 +105,7 @@ const Title = styled.div`
 
 export default function Aboutme() {
     return (
+        <Zoom bottom>  
         <AboutMeContainer id="Aboutme">
             <WhiteBackground>
                 <TextArea>
@@ -135,5 +137,6 @@ export default function Aboutme() {
                 </TextArea>
             </BlackBackground>
         </AboutMeContainer>
-    )
+        </Zoom>
+    );
 }
