@@ -59,12 +59,16 @@ const BlackText = styled.div`
     font-size: 32px;
     margin-bottom: 20px;
 
-    @media (max-width: 450px) {
-        font-size: 28px;
-    }
-
     @media (max-width: 1340px) {
         font-size: 37px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 33px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 31px;
     }
 `;
 
