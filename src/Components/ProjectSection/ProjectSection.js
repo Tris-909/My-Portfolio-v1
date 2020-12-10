@@ -6,6 +6,7 @@ import FaceRecognition from './Face_mini.PNG';
 import HandmadePottery from './HandmadePottery-min.png';
 import WeatherApp from './WeatherApp.PNG';
 import CMS_PHP from './CMS-PHP.PNG';
+import E_Commerce from './Ecommerce-min.PNG';
 
 import Project from '../Project/Project/Project';
 import Seemore from '../Button/Seemore';
@@ -51,7 +52,25 @@ export default function Projects() {
             
             <FadeAnimation>
                 <Project 
-                    projectCard_top="0" 
+                projectCard_top="0" 
+                projectCard_left="40%"
+                projectText_margin="7% 7% 7% 35%"
+                projectName="E-Commerce Proshop" 
+                ProjectExplainForMobile="FullStack E-Commerce Websites built using React and NodeJS, MongoDB"
+                ProjectExplainOne="_This is a MERN project. I used React, NodeJS, MongoDB to create this web-application then deployed it to heroku." 
+                ProjectExplainTwo="_Authentication, Authorization (JSON Web Token), PayPal Integration, Pagination, Complicated State Management using Redux, ..." 
+                ViewCodeLink="https://github.com/Tris-909/Ecommerce-BradTraversy" 
+                LiveDemoLink="https://proshop-tris.herokuapp.com/" 
+                ProjectPicture={E_Commerce} 
+                ProjectPicture_width="80%" 
+                ProjectPicture_height="75%" 
+                ProjectPicture_top="7%"
+                ProjectPicture_left="-50%" />
+            </FadeAnimation>
+
+            <FadeAnimation>
+                <Project 
+                projectCard_top="0" 
                 projectCard_left="0"
                 projectText_margin="7%"
                 projectName="SOCIAL MEDIA APP" 
@@ -87,6 +106,7 @@ export default function Projects() {
                 ProjectPicture_left="-50%" />
             </FadeAnimation>
 
+            <Hidden hidden={hidden}> 
             <FadeAnimation>
                 <Project 
                     projectCard_top="0" 
@@ -104,6 +124,7 @@ export default function Projects() {
                 ProjectPicture_top="10%"
                 ProjectPicture_left="70%" />
             </FadeAnimation>
+            </Hidden>
 
             <Hidden hidden={hidden}> 
                 <FadeAnimation>

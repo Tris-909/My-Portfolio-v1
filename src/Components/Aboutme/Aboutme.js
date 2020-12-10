@@ -127,7 +127,7 @@ export default function Aboutme() {
                         <WhiteText>_ AJAX, RESTful API</WhiteText>
                         <WhiteText>_ Git/ Github</WhiteText>
                         <WhiteText>_ Responsive Layout</WhiteText>
-                        <WhiteText></WhiteText>
+                        <WhiteText>_ NodeJS (Express + Mongoose)</WhiteText>
                     </SkillsContainer>
                     <WhiteText>_ Experience with some CSS framework : Styled-Components, Material-UI,...</WhiteText>
 
