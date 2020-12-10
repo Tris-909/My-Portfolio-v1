@@ -12,32 +12,25 @@ import ButtonContainer from '../Project Utilities/ButtonContainer';
 
 import Button from '../../Button/Button';
 
-export default function SocialApp({ 
-    projectCard_top, 
-    projectCard_left,
-    projectText_margin,
+export default function ProjectLeft({ 
     projectName,
     ProjectExplainForMobile,
     ProjectExplainOne,
     ProjectExplainTwo,
     ViewCodeLink,
     LiveDemoLink,
-    ProjectPicture,
-    ProjectPicture_width,
-    ProjectPicture_height,
-    ProjectPicture_top,
-    ProjectPicture_left    
+    ProjectPicture, 
     }) {
     return (
     <ProjectContainer>
-        <ProjectCard top={projectCard_top} left={projectCard_left}>
+        <ProjectCard top="0" left="40%">
             <ProjectImage 
                 src={ProjectPicture} 
-                width={ProjectPicture_width} 
-                height={ProjectPicture_height} 
-                top={ProjectPicture_top} 
-                left={ProjectPicture_left} />
-            <ProjectText margin={projectText_margin}>
+                width="80%"  
+                height="75%"  
+                top="7%"
+                left="-50%" />
+            <ProjectText margin="7% 7% 7% 35%">
                 <ProjectName>
                     {projectName}
                 </ProjectName>

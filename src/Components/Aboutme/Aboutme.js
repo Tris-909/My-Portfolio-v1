@@ -59,8 +59,12 @@ const BlackText = styled.div`
     font-size: 32px;
     margin-bottom: 20px;
 
-    @media (max-width: 400px) {
+    @media (max-width: 450px) {
         font-size: 28px;
+    }
+
+    @media (max-width: 1340px) {
+        font-size: 37px;
     }
 `;
 
@@ -88,7 +92,7 @@ const SubTitle = styled.div`
 const WhiteText = styled.div`
     font-family: 'Open Sans Condensed', sans-serif;
     color: white;
-    font-size: 28px;
+    font-size: 26px;
 
     @media (max-width: 380px) {
         font-size: 24px;
@@ -111,7 +115,7 @@ export default function Aboutme() {
                 <TextArea>
                     <Title >About me :</Title>
                     <BlackText><i className="fas fa-angle-right"></i> Hi Again, My full name is Tri Minh Tran and I love technologies and coffee.</BlackText>
-                    <BlackText><i className="fas fa-angle-right"></i> I am a Front End Developer and I have experience of building websites or web-app using HTML, SCSS, React, ...</BlackText>
+                    <BlackText><i className="fas fa-angle-right"></i> I have experience of building websites or web-app using HTML, SCSS, React, ...</BlackText>
                     <BlackText><i className="fas fa-angle-right"></i> I am always open to new opportunities to improve myself as a developer.</BlackText>
                 </TextArea>
             </WhiteBackground>
@@ -127,13 +131,14 @@ export default function Aboutme() {
                         <WhiteText>_ AJAX, RESTful API</WhiteText>
                         <WhiteText>_ Git/ Github</WhiteText>
                         <WhiteText>_ Responsive Layout</WhiteText>
-                        <WhiteText>_ NodeJS (Express + Mongoose)</WhiteText>
                     </SkillsContainer>
-                    <WhiteText>_ Experience with some CSS framework : Styled-Components, Material-UI,...</WhiteText>
+                    <WhiteText>_ Experience with some CSS frameworks : Styled-Components, Material-UI, React-Boostrap,...</WhiteText>
 
                     <SubTitle> Back-End : </SubTitle>
                         <WhiteText>_ SQL Database : PostgreSQL, MySQL </WhiteText>
-                        <WhiteText>_ Server Side Language : PHP (MAMP) </WhiteText>
+                        <WhiteText>_ Server Side Language : </WhiteText>
+                        <WhiteText> + PHP (MAMP) </WhiteText>
+                        <WhiteText> + NodeJS (Express + Mongoose) </WhiteText>
                 </TextArea>
             </BlackBackground>
         </AboutMeContainer>

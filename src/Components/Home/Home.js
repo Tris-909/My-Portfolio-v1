@@ -84,7 +84,7 @@ export default function Home() {
     <TextContainer id="Home">
         <FlexContainer>
           <MainText>Hello,<span>I'm Tri Tran</span></MainText> 
-          <SmallerText>Front End Developer</SmallerText> 
+          <SmallerText>Web Developer</SmallerText> 
           <IconContainer>
             <a href="https://www.linkedin.com/in/tr%C3%AD-tr%E1%BA%A7n-6861331a4/" target="_blank" rel="noopener noreferrer">
               <i  className="fab fa-linkedin" style={{color: 'white', fontSize: '2.5rem', cursor: 'pointer'}}></i>
