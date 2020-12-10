@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { keyframes } from 'styled-components';
 import { fadeInLeft, fadeInRight } from 'react-animations';
+import './backGroundEffect.css';
 
 const FadeInLeftAnimation = keyframes`${fadeInLeft}`;
 const FadeInRightAnimation = keyframes`${fadeInRight}`;
@@ -12,6 +13,10 @@ const TextContainer = styled.div`
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
 
+  position: relative;
+  background: radial-gradient(ellipse at bottom, #141414 0%, #141414 100%);
+  overflow: hidden;
+
   @media (max-width: 870px) {
     position: relative;
     height: 100vh;
@@ -19,12 +24,12 @@ const TextContainer = styled.div`
 `;
 
 const FlexContainer = styled.div`
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column; 
   width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+ height: 100%;
 
   @media (max-width: 870px) {
     position: relative;
@@ -94,6 +99,9 @@ export default function Home() {
             </a>
           </IconContainer>
         </FlexContainer>
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
     </TextContainer>
     )
 }

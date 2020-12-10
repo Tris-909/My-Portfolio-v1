@@ -8,7 +8,6 @@ import WeatherApp from './WeatherApp.PNG';
 import CMS_PHP from './CMS-PHP.PNG';
 import E_Commerce from './Ecommerce-min.PNG';
 
-import Project from '../Project/Project/Project';
 import ProjectLeft from '../Project/Project/ProjectLeft';
 import ProjectRight from '../Project/Project/ProjectRight';
 import Seemore from '../Button/Seemore';
