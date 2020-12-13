@@ -6,7 +6,7 @@ import FaceRecognition from './Face_mini.PNG';
 import HandmadePottery from './HandmadePottery-min.png';
 import WeatherApp from './WeatherApp.PNG';
 import CMS_PHP from './CMS-PHP.PNG';
-import E_Commerce from './proshop-min.PNG';
+import E_Commerce from './E-commerce-min.PNG';
 
 import ProjectLeft from '../Project/Project/ProjectLeft';
 import ProjectRight from '../Project/Project/ProjectRight';
