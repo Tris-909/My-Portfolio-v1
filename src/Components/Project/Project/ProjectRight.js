@@ -25,7 +25,7 @@ export default function ProjectRight({
     <ProjectContainer>
         <ProjectCard top="0"  left="0">
             <ProjectImage 
-                src={ProjectPicture} 
+                imageArray={ProjectPicture} 
                 width="80%" 
                 height="70%" 
                 top="10%"

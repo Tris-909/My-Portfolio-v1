@@ -25,10 +25,10 @@ export default function ProjectLeft({
     <ProjectContainer>
         <ProjectCard top="0" left="40%">
             <ProjectImage 
-                src={ProjectPicture} 
+                imageArray={ProjectPicture} 
                 width="80%"  
                 height="75%"  
-                top="7%"
+                top="15%"
                 left="-50%" />
             <ProjectText margin="7% 7% 7% 35%">
                 <ProjectName>

@@ -28,7 +28,10 @@ color: #000;
     transition: all 0.4s ease 0s;
 }
 
-
+@media (max-width: 400px) {
+    font-size: 1rem;
+    padding: 7px;
+}
 `;
 
 

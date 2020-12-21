@@ -4,16 +4,19 @@ import styled from 'styled-components';
 import SocialApp from './SocialApp-min.PNG';
 import FaceRecognition from './Face_mini.PNG';
 import HandmadePottery from './HandmadePottery-min.png';
-import WeatherApp from './WeatherApp.PNG';
 import CMS_PHP from './CMS-PHP.PNG';
-import E_Commerce from './Ecommerce-min.PNG';
 
 import ProjectLeft from '../Project/Project/ProjectLeft';
 import ProjectRight from '../Project/Project/ProjectRight';
 import Seemore from '../Button/Seemore';
 
-import FadeAnimation from '../Project/ProjectAnimation/FadeBottom';
+//TODO: ProShop Image
+import ProShop1 from './ProShop Image/pic1-min.PNG';
+import ProShop2 from './ProShop Image/pic2-min.PNG';
+import ProShop3 from './ProShop Image/pic3-min.PNG';
+import ProShop5 from './ProShop Image/pic5-min.PNG';
 
+import FadeAnimation from '../Project/ProjectAnimation/FadeBottom';
 
 const Container = styled.div`
     background-color: #141414;
@@ -59,7 +62,7 @@ export default function Projects() {
                     ProjectExplainTwo="_Authentication, Authorization (JSON Web Token), PayPal Integration, Pagination, Complicated State Management using Redux, ..." 
                     ViewCodeLink="https://github.com/Tris-909/Ecommerce-BradTraversy" 
                     LiveDemoLink="https://proshop-tris.herokuapp.com/" 
-                    ProjectPicture={E_Commerce} 
+                    ProjectPicture={[ProShop1, ProShop2, ProShop3, ProShop5]} 
                 />
             </FadeAnimation>
 
@@ -73,10 +76,11 @@ export default function Projects() {
                     and ability to work with complicated web-app that intereact with database, API, Redux , Material-UI,..." 
                     ViewCodeLink="https://github.com/Tris-909/SocialMedia-Clone" 
                     LiveDemoLink="https://socialapp-2c8b0.firebaseapp.com/login" 
-                    ProjectPicture={SocialApp} 
+                    ProjectPicture={[SocialApp]} 
                 />
             </FadeAnimation>
 
+            <Hidden hidden={hidden}> 
             <FadeAnimation>
                 <ProjectLeft 
                     projectName="Blog CMS (PC Version)" 
@@ -85,9 +89,10 @@ export default function Projects() {
                     ProjectExplainTwo="_This project allow users to sign in create blogs and if they are admin, they will have a separated page to see and control all the blogs..." 
                     ViewCodeLink="https://github.com/Tris-909/CMS-PHP" 
                     LiveDemoLink="https://shrouded-springs-90128.herokuapp.com/" 
-                    ProjectPicture={CMS_PHP} 
+                    ProjectPicture={[CMS_PHP]} 
                 />
             </FadeAnimation>
+            </Hidden>
 
             <Hidden hidden={hidden}> 
                 <FadeAnimation>
@@ -98,7 +103,7 @@ export default function Projects() {
                         ProjectExplainTwo="_This was built using ReactJS along with some packages like axios and styled-components..." 
                         ViewCodeLink="https://github.com/Tris-909/Face-Recognition" 
                         LiveDemoLink="https://face-recognition-tris909.herokuapp.com/" 
-                        ProjectPicture={FaceRecognition} 
+                        ProjectPicture={[FaceRecognition]} 
                     />
                 </FadeAnimation>
             </Hidden>
@@ -112,21 +117,7 @@ export default function Projects() {
                         ProjectExplainTwo="_In this project, I have to work closely with the designer to turn a sketch to a live landing page that is fully responsive" 
                         ViewCodeLink="https://github.com/Tris-909/HandmadePottery-LandingPage" 
                         LiveDemoLink="https://tris-909.github.io/HandmadePottery-LandingPage/HandPottery.html" 
-                        ProjectPicture={HandmadePottery} 
-                    />
-                </FadeAnimation>
-            </Hidden>
-
-            <Hidden hidden={hidden}> 
-                <FadeAnimation>
-                    <ProjectRight 
-                        projectName="WEATHER APP" 
-                        ProjectExplainForMobile="This website allows users to see weather forecast of sepcific location"
-                        ProjectExplainOne="_This is a project that I have been working on when I were learning NodeJS" 
-                        ProjectExplainTwo="_I use HTML, CSS (boostrap), JS for the client-side and NodeJS + Express for server-side." 
-                        ViewCodeLink="https://github.com/Tris-909/WeatherApp-Heroku" 
-                        LiveDemoLink="https://tris-weather-application.herokuapp.com/" 
-                        ProjectPicture={WeatherApp} 
+                        ProjectPicture={[HandmadePottery]} 
                     />
                 </FadeAnimation>
             </Hidden>
