@@ -29,7 +29,7 @@ const Image = styled.img`
 
 
     @media (max-width: 1400px) {
-        height: 400px;
+        height: 500px;
     }
 
     @media (max-width: 650px) {

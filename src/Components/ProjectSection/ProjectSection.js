@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components';
 
-import SocialApp from './SocialApp-min.PNG';
 import FaceRecognition from './Face_mini.PNG';
 import HandmadePottery from './HandmadePottery-min.png';
 import CMS_PHP from './CMS-PHP.PNG';
@@ -11,10 +10,17 @@ import ProjectRight from '../Project/Project/ProjectRight';
 import Seemore from '../Button/Seemore';
 
 //TODO: ProShop Image
-import ProShop1 from './ProShop Image/pic1-min.PNG';
+import ProShop1HighTexture from './ProShop Image/pic6.PNG';
+import ProShop7 from './ProShop Image/pic7.PNG';
 import ProShop2 from './ProShop Image/pic2-min.PNG';
-import ProShop3 from './ProShop Image/pic3-min.PNG';
 import ProShop5 from './ProShop Image/pic5-min.PNG';
+import ProShop8 from './ProShop Image/pic8.PNG';
+
+//TODO: Social Clone Image
+import Pic1 from './Social Clone/Pic1.PNG';
+import Pic2 from './Social Clone/Pic2.PNG';
+import Pic3 from './Social Clone/Pic3.PNG';
+import Pic4 from './Social Clone/Pic4.PNG';
 
 import FadeAnimation from '../Project/ProjectAnimation/FadeBottom';
 
@@ -62,7 +68,7 @@ export default function Projects() {
                     ProjectExplainTwo="_Authentication, Authorization (JSON Web Token), PayPal Integration, Pagination, Complicated State Management using Redux, ..." 
                     ViewCodeLink="https://github.com/Tris-909/Ecommerce-BradTraversy" 
                     LiveDemoLink="https://proshop-tris.herokuapp.com/" 
-                    ProjectPicture={[ProShop1, ProShop2, ProShop3, ProShop5]} 
+                    ProjectPicture={[ProShop1HighTexture, ProShop2, ProShop7 ,ProShop5, ProShop8]} 
                 />
             </FadeAnimation>
 
@@ -76,7 +82,7 @@ export default function Projects() {
                     and ability to work with complicated web-app that intereact with database, API, Redux , Material-UI,..." 
                     ViewCodeLink="https://github.com/Tris-909/SocialMedia-Clone" 
                     LiveDemoLink="https://socialapp-2c8b0.firebaseapp.com/login" 
-                    ProjectPicture={[SocialApp]} 
+                    ProjectPicture={[Pic1, Pic2, Pic3, Pic4]} 
                 />
             </FadeAnimation>
 
