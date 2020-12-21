@@ -57,8 +57,8 @@ export default function Projects() {
             <FadeAnimation>
                 <ProjectLeft 
                     projectName="E-Commerce Proshop" 
-                    ProjectExplainForMobile="FullStack E-Commerce Websites built using React and NodeJS, MongoDB"
-                    ProjectExplainOne="_This is a MERN project. I used React, NodeJS, MongoDB to create this web-application then deployed it to heroku." 
+                    ProjectExplainForMobile="FullStack E-Commerce Websites built using React and NodeJS, MongoDB. I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites."
+                    ProjectExplainOne="_This is a MERN project. I used React, NodeJS, MongoDB to create this web-application then deployed it to heroku.  I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites." 
                     ProjectExplainTwo="_Authentication, Authorization (JSON Web Token), PayPal Integration, Pagination, Complicated State Management using Redux, ..." 
                     ViewCodeLink="https://github.com/Tris-909/Ecommerce-BradTraversy" 
                     LiveDemoLink="https://proshop-tris.herokuapp.com/" 
