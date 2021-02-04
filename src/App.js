@@ -5,7 +5,6 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Projects from './Components/ProjectSection/ProjectSection';
 import Aboutme from './Components/Aboutme/Aboutme';
-import GithubCalendar from './Components/GithubCalendar/GithubCalendar';
 import ContactMe from './Components/ContactMe/ContactMe';
 import Footer from './Components/Footer/Footer';
 
