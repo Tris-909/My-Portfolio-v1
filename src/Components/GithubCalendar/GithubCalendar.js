@@ -31,6 +31,8 @@ const GithubTitle = styled.p`
     }
 `;
 
+// Github Calender packages has some errors that display nothing
+// Temporary remove it from App.js to see further fixing
 const GithubCalendar = () => {
     const exampleTheme = {
         background: 'transparent',
@@ -39,8 +41,14 @@ const GithubCalendar = () => {
     
     return (
         <GithubCalendarContainer>
-            <GithubTitle> My Github Contributions </GithubTitle>
-            <GitHubCalendar username="Tris-909" theme={exampleTheme} blockSize={40} fontSize={30} showTotalCount/>
+            <GithubTitle> My Github Contributions</GithubTitle>
+            <GitHubCalendar 
+                username="Tris-909" 
+                theme={exampleTheme} 
+                blockSize={40} 
+                fontSize={30} 
+                showTotalCount
+                years={[2020, 2021]}/>
         </GithubCalendarContainer>
     );
 }

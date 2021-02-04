@@ -29,7 +29,6 @@ function App() {
     <Home />
     <Projects /> 
     <Aboutme/>
-    <GithubCalendar />
     <ContactMe /> 
     <Footer />
   </Background>

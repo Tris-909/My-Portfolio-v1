@@ -118,7 +118,7 @@ export default function Aboutme() {
             <WhiteBackground>
                 <TextArea>
                     <Title >About me :</Title>
-                    <BlackText><i className="fas fa-angle-right"></i> Hi Again, My full name is Tri Minh Tran and I love technologies and coffee.</BlackText>
+                    <BlackText><i className="fas fa-angle-right"></i> Hi Again, my full name is Tri Minh Tran and I love technologies and coffee.</BlackText>
                     <BlackText><i className="fas fa-angle-right"></i> I have experience of building websites or web-app using HTML, SCSS, React, ...</BlackText>
                     <BlackText><i className="fas fa-angle-right"></i> I am always open to new opportunities to improve myself as a developer.</BlackText>
                 </TextArea>
@@ -130,16 +130,16 @@ export default function Aboutme() {
                     <SkillsContainer>
                         <WhiteText>_ HTML5 </WhiteText>
                         <WhiteText>_ CSS3, SCSS, SASS</WhiteText>
-                        <WhiteText>_ JS (ES6+)</WhiteText>
+                        <WhiteText>_ JavaScript (ES6+)</WhiteText>
                         <WhiteText>_ React, React-Router, Redux</WhiteText>
-                        <WhiteText>_ AJAX, RESTful API</WhiteText>
+                        <WhiteText>_ AJAX, RESTful APIs</WhiteText>
                         <WhiteText>_ Git/ Github</WhiteText>
                         <WhiteText>_ Responsive Layout</WhiteText>
                     </SkillsContainer>
                     <WhiteText>_ Experience with some CSS frameworks : Styled-Components, Material-UI, React-Boostrap,...</WhiteText>
 
                     <SubTitle> Back-End : </SubTitle>
-                        <WhiteText>_ SQL Database : PostgreSQL, MySQL </WhiteText>
+                        <WhiteText>_ SQL Database : MySQL Queries </WhiteText>
                         <WhiteText>_ Server Side Language : </WhiteText>
                         <WhiteText> + PHP (MAMP) </WhiteText>
                         <WhiteText> + NodeJS (Express + Mongoose) </WhiteText>
