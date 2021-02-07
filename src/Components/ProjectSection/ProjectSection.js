@@ -66,6 +66,9 @@ export default function Projects() {
                     ProjectExplainForMobile="FullStack E-Commerce Websites built using React and NodeJS, MongoDB. I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites."
                     ProjectExplainOne="_This is a MERN project. I used React, NodeJS, MongoDB to create this web-application then deployed it to heroku.  I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites." 
                     ProjectExplainTwo="_Authentication, Authorization (JSON Web Token), PayPal Integration, Pagination, Complicated State Management using Redux, ..." 
+                    ProjectCredentials="sb-uj3sb3898726@personal.example.com - ZRy:}9n+"
+                    ProjectAdminCredential="admin@email.com - 123"
+                    isShow={true}
                     ViewCodeLink="https://github.com/Tris-909/Ecommerce-BradTraversy" 
                     LiveDemoLink="https://proshop-tris.herokuapp.com/" 
                     ProjectPicture={[ProShop1HighTexture, ProShop2, ProShop7 ,ProShop5, ProShop8]} 
