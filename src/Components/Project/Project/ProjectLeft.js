@@ -38,6 +38,10 @@ const Tab = styled.div`
     text-align: center;
     font-size: 1.7rem;
     font-weight: 700;
+
+    @media (max-width: 1175px) {
+        display: none;
+    }
 `;
 
 const BorderBottom = styled.div`
@@ -59,7 +63,7 @@ export default function ProjectLeft({
     ProjectAdminCredential
     }) {
     
-    const [descriptionActiveProshop, setDescriptionActiveProshop] = useState(false);
+    const [descriptionActiveProshop, setDescriptionActiveProshop] = useState(true);
 
     const toggleActiveDescription = (value) => {
         if (descriptionActiveProshop === true && value === 'description') {
