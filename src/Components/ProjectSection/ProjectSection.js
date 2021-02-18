@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components';
 
-import FaceRecognition from './Face_mini.PNG';
 import HandmadePottery from './HandmadePottery-min.png';
 import CMS_PHP from './CMS-PHP.PNG';
 
@@ -106,20 +105,6 @@ export default function Projects() {
             <Hidden hidden={hidden}> 
                 <FadeAnimation>
                     <ProjectRight 
-                        projectName="FACE RECOGNITION" 
-                        ProjectExplainForMobile="This website allows users to do face-recognition by using a 3rd company API"
-                        ProjectExplainOne="_This is project that work with 3rd company API that allow users to do face-recognition on their picture using imageURL." 
-                        ProjectExplainTwo="_This was built using ReactJS along with some packages like axios and styled-components..." 
-                        ViewCodeLink="https://github.com/Tris-909/Face-Recognition" 
-                        LiveDemoLink="https://face-recognition-tris909.herokuapp.com/" 
-                        ProjectPicture={[FaceRecognition]} 
-                    />
-                </FadeAnimation>
-            </Hidden>
-
-            <Hidden hidden={hidden}> 
-                <FadeAnimation>
-                    <ProjectLeft 
                         projectName="WORKSHOP LANDING PAGE" 
                         ProjectExplainForMobile="In this project, I have to work with a designer to turn a design from a sketch to a live website that fully responsive."
                         ProjectExplainOne="_This is a landing page designed by Designer Tran Ngoc Phuong Uyen on Figma and built by Front End Developer Tri Tran" 

@@ -6,6 +6,7 @@ const ProjectTextMargin = styled.div`
     width: 60%;
     height: 70%;
     color: white;
+    position: relative; 
 
     @media (max-width: 1400px) {
         width: 85%;
