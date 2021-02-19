@@ -147,6 +147,43 @@ const ToolCMS = styled(GeneralStyleForMiniContainer)`
     }
 `;
 
+//! Social App
+const SocialAppContainer = styled(GeneralStyleForMiniContainer)`
+    grid-template-areas:   "HTML5 CSS3"
+                            "JavaScript6 React"
+                            "Firebase Material-UI";
+    min-height: 250px;
+
+    & #socialhtml5 {
+        grid-area: HTML5;
+    }
+
+    & #socialcss3 {
+        grid-area: CSS3;
+    }
+
+    & #socialjs {
+        grid-area: JavaScript6;
+    }
+
+    & #socialreact {
+        grid-area: React;
+    }
+
+    & #firebase {
+        grid-area: Firebase;
+    }
+
+    & #material-ui {
+        grid-area: Material-UI;
+    }
+
+    @media (max-width: 1400px) {
+        min-height: 150px;
+    }
+`;
+
+
 const Arrow = styled.div`
     position: absolute;
     right: ${props => props.name === 'tool' ? '-26%' : '-20%'};
@@ -209,6 +246,19 @@ export default function ProjectTechStack({
                     <span id="cmsgit">Git</span>
                     <span id="boostrap">Boostrap</span>
                 </ToolCMS>
+            </Container>
+        );
+    } else if (projectName === 'SOCIAL MEDIA APP') {
+        return(
+            <Container>
+                <SocialAppContainer>
+                    <span id="socialhtml5">HTML5</span>
+                    <span id="socialcss3">CSS3</span>
+                    <span id="socialjs">JavaScript</span>
+                    <span id="socialreact">React</span>
+                    <span id="firebase">Firebase</span>
+                    <span id="material-ui">Material-UI</span>
+                </SocialAppContainer>
             </Container>
         );
     }

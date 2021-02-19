@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import styled from 'styled-components';
 
 import ProjectCard from '../ProjectCard/ProjectCard';
 import ProjectText from '../ProjectText/ProjectText';
@@ -11,45 +10,8 @@ import ProjectExplain from '../Project Utilities/ProjectExplain';
 import ProjectCredential from '../Project Utilities/ProjectCredential';
 import ProjectContainer from '../Project Utilities/ProjectContainer';
 import ButtonContainer from '../Project Utilities/ButtonContainer';
-
+import TabBar from './Tab-Bar';
 import Button from '../../Button/Button';
-
-const Absolute = styled.div`
-    position: relative;
-    width: 100%;
-    margin-bottom: 1rem;
-`;
-
-const ProjectTab = styled.div`
-    width: 100%;
-    display: grid;
-    grid-template-areas: "description tech-stacks";
-`;
-
-const Tab = styled.div`
-    grid-area: ${props => props.category === 'description' ? 'description' : 'tech-stacks'};
-    color: white;
-    background-color: #30302e;
-    
-    cursor: pointer;
-    border-radius: 15px;
-    padding: 1rem;
-
-    text-align: center;
-    font-size: 1.7rem;
-    font-weight: 700;
-
-    @media (max-width: 1175px) {
-        display: none;
-    }
-`;
-
-const BorderBottom = styled.div`
-    padding-bottom: 0.5rem;
-    border-bottom: ${props => props.isActive === true ? '3px solid #ff2e2e;' : 'none'}; 
-    transition: border 0.1s;
-`;
-
 
 export default function ProjectLeft({ 
     projectName,
@@ -85,20 +47,8 @@ export default function ProjectLeft({
                 top="15%"
                 left="-50%" />
             <ProjectText margin="7% 7% 7% 35%">
-            <Absolute project={projectName}>
-                <ProjectTab>
-                    <Tab 
-                        category='description' 
-                        onClick={() => toggleActiveDescription('description')}>
-                        <BorderBottom isActive={descriptionActiveProshop}>Description</BorderBottom>
-                    </Tab>
-                    <Tab 
-                        category='tech-stacks' 
-                        onClick={() => toggleActiveDescription('tech-stacks')}>
-                        <BorderBottom isActive={!descriptionActiveProshop}>Tech-Stacks</BorderBottom>
-                    </Tab>
-                </ProjectTab>
-            </Absolute>
+            <TabBar descriptionActiveProshop={descriptionActiveProshop} 
+                    toggleActiveDescription={(val) => toggleActiveDescription(val)} />
                 {
                     descriptionActiveProshop ? (
                         <>
