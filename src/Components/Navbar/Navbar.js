@@ -44,7 +44,15 @@ const Brand = styled(Link)`
     cursor: pointer;
     text-decoration: none;
 
-    @media (max-width: 2200px) {
+    @media (max-width: 1800px) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 1500px) {
+        font-size: 2rem;
+    }
+
+    @media (min-width: 1800px) {
         font-size: 3rem;
     }
 `;

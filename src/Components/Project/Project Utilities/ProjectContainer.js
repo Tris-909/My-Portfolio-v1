@@ -15,6 +15,22 @@ const ProjectContainerStyled = styled.div`
         margin: 0% 0% 5% 0%;
         height: initial;
     }
+
+    @media (min-width: 1800px) {
+        margin: 0% 15% 5% 15%;
+    }
+
+    @media (min-width: 2200px) {
+        margin: 0% 20% 5% 20%;
+    }
+
+    @media (min-width: 2600px) {
+        margin: 0% 25% 5% 25%;
+    }
+
+    @media (min-width: 3000px) {
+        margin: 0% 30% 5% 30%;
+    }
 `;
 
 export default function ProjectContainer(props) {

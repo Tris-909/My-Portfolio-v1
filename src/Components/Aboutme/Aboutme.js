@@ -128,19 +128,19 @@ export default function Aboutme() {
                     <Title style={{ color: 'white' }}>My Skills :</Title>
                     <SubTitle> Front-End : </SubTitle>
                     <SkillsContainer>
-                        <WhiteText>_ HTML5 </WhiteText>
-                        <WhiteText>_ CSS3, SCSS, SASS</WhiteText>
-                        <WhiteText>_ JavaScript (ES6+)</WhiteText>
-                        <WhiteText>_ React, React-Router, Redux</WhiteText>
-                        <WhiteText>_ AJAX, RESTful APIs</WhiteText>
-                        <WhiteText>_ Git/ Github</WhiteText>
-                        <WhiteText>_ Responsive Layout</WhiteText>
+                        <WhiteText> HTML5 </WhiteText>
+                        <WhiteText> CSS3, SCSS, SASS</WhiteText>
+                        <WhiteText> JavaScript (ES6+)</WhiteText>
+                        <WhiteText> React, React-Router, Redux</WhiteText>
+                        <WhiteText> AJAX, RESTful APIs</WhiteText>
+                        <WhiteText> Git/ Github</WhiteText>
+                        <WhiteText> Responsive Layout</WhiteText>
                     </SkillsContainer>
-                    <WhiteText>_ Experience with some CSS frameworks : Styled-Components, Material-UI, React-Boostrap,...</WhiteText>
+                    <WhiteText> Experience with some CSS frameworks : Styled-Components, Material-UI, React-Boostrap,...</WhiteText>
 
                     <SubTitle> Back-End : </SubTitle>
-                        <WhiteText>_ SQL Database : MySQL Queries </WhiteText>
-                        <WhiteText>_ Server Side Language : </WhiteText>
+                        <WhiteText> SQL Database : MySQL Queries </WhiteText>
+                        <WhiteText> Server Side Language : </WhiteText>
                         <WhiteText> + PHP (MAMP) </WhiteText>
                         <WhiteText> + NodeJS (Express + Mongoose) </WhiteText>
                 </TextArea>

@@ -1,9 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components';
 
-import HandmadePottery from './HandmadePottery-min.png';
-import CMS_PHP from './CMS-PHP.PNG';
-
 import ProjectLeft from '../Project/Project/ProjectLeft';
 import ProjectRight from '../Project/Project/ProjectRight';
 import Seemore from '../Button/Seemore';
@@ -20,6 +17,18 @@ import Pic1 from './Social Clone/Pic1.PNG';
 import Pic2 from './Social Clone/Pic2.PNG';
 import Pic3 from './Social Clone/Pic3.PNG';
 import Pic4 from './Social Clone/Pic4.PNG';
+
+//TODO: CMS
+import CMS_PHP1 from './CMS/CMS-PHP.PNG';
+import CMS_PHP2 from './CMS/CMS_2-min.PNG';
+import CMS_PHP3 from './CMS/CMS_3-min.PNG';
+import CMS_PHP4 from './CMS/CMS_4-min.PNG';
+
+//TODO: LandingPage
+import LP_1 from './LandingPage/LDP1.png';
+import LP_2 from './LandingPage/LDP2-min.PNG';
+import LP_3 from './LandingPage/LDP3-min.PNG';
+import LP_4 from './LandingPage/LDP4-min.PNG';
 
 import FadeAnimation from '../Project/ProjectAnimation/FadeBottom';
 
@@ -63,8 +72,8 @@ export default function Projects() {
                 <ProjectLeft 
                     projectName="E-Commerce Proshop" 
                     ProjectExplainForMobile="FullStack E-Commerce Websites built using React and NodeJS, MongoDB. I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites."
-                    ProjectExplainOne="_This is a MERN project. I used React, NodeJS, MongoDB to create this web-application then deployed it to heroku.  I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites." 
-                    ProjectExplainTwo="_Authentication, Authorization (JSON Web Token), PayPal Integration, Pagination, Complicated State Management using Redux, ..." 
+                    ProjectExplainOne="This is a MERN project. I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites to build real-world features and improve my React skill." 
+                    ProjectExplainTwo="The Site is a combination between a content management system (admin page) and an e-commerce websites. Admin can perform CRUD operations through interfaces (Content Management System)." 
                     ProjectCredentials="sb-uj3sb3898726@personal.example.com - ZRy:}9n+"
                     ProjectAdminCredential="admin@email.com - 123"
                     isShow={true}
@@ -78,8 +87,8 @@ export default function Projects() {
                 <ProjectRight 
                     projectName="SOCIAL MEDIA APP" 
                     ProjectExplainForMobile="This is a full-stack web-app built using React + Material-UI and Firebase."
-                    ProjectExplainOne="_This is a full-stack project clone popular social media app like: facebook, twitter." 
-                    ProjectExplainTwo="_This websites is built using React for Front-End and Firebase for both Database and Server-Side. 
+                    ProjectExplainOne="This is a full-stack project clone popular social media app like: facebook, twitter." 
+                    ProjectExplainTwo="This websites is built using React for Front-End and Firebase for both Database and Server-Side. 
                     This websites is designed and built by me to demonstrate my React skills 
                     and ability to work with complicated web-app that intereact with database, API, Redux , Material-UI,..." 
                     ViewCodeLink="https://github.com/Tris-909/SocialMedia-Clone" 
@@ -93,11 +102,11 @@ export default function Projects() {
                 <ProjectLeft 
                     projectName="Blog CMS (PC Version)" 
                     ProjectExplainForMobile="Full-stack CMS Blogs websites built using PHP and mySQL."
-                    ProjectExplainOne="_This is a PHP + mySQL project. I used MAMP and phpMyAdmin to create this web-application then deployed it to heroku." 
-                    ProjectExplainTwo="_This project allow users to sign in create blogs and if they are admin, they will have a separated page to see and control all the blogs..." 
+                    ProjectExplainOne="This is a PHP + mySQL project. I used MAMP and phpMyAdmin to create this web-application then deployed it to heroku." 
+                    ProjectExplainTwo="This project allow users to sign in create blogs and if they are admin, they will have a separated page to see and control all the blogs..." 
                     ViewCodeLink="https://github.com/Tris-909/CMS-PHP" 
                     LiveDemoLink="https://shrouded-springs-90128.herokuapp.com/" 
-                    ProjectPicture={[CMS_PHP]} 
+                    ProjectPicture={[CMS_PHP1, CMS_PHP2, CMS_PHP3, CMS_PHP4]} 
                 />
             </FadeAnimation>
             </Hidden>
@@ -107,11 +116,11 @@ export default function Projects() {
                     <ProjectRight 
                         projectName="WORKSHOP LANDING PAGE" 
                         ProjectExplainForMobile="In this project, I have to work with a designer to turn a design from a sketch to a live website that fully responsive."
-                        ProjectExplainOne="_This is a landing page designed by Designer Tran Ngoc Phuong Uyen on Figma and built by Front End Developer Tri Tran" 
-                        ProjectExplainTwo="_In this project, I have to work closely with the designer to turn a sketch to a live landing page that is fully responsive" 
+                        ProjectExplainOne="This is a landing page designed by Designer Tran Ngoc Phuong Uyen on Figma and built by Front End Developer Tri Tran" 
+                        ProjectExplainTwo="In this project, I have to work closely with the designer to turn a sketch to a live landing page that is fully responsive" 
                         ViewCodeLink="https://github.com/Tris-909/HandmadePottery-LandingPage" 
                         LiveDemoLink="https://tris-909.github.io/HandmadePottery-LandingPage/HandPottery.html" 
-                        ProjectPicture={[HandmadePottery]} 
+                        ProjectPicture={[LP_1, LP_2, LP_3, LP_4]} 
                     />
                 </FadeAnimation>
             </Hidden>

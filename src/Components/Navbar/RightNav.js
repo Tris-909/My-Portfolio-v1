@@ -68,7 +68,15 @@ const NavItem = styled(Link)`
         text-align: center;
     }
 
-    @media (max-width: 2200px) {
+    @media (max-width: 1800px) {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 1600px) {
+        font-size: 2rem;
+    }
+
+    @media (min-width: 1800px) {
         font-size: 3rem;
     }
 `;
