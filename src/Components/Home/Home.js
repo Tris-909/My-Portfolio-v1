@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import styled, { keyframes } from 'styled-components';
 import { fadeInLeft, fadeInRight } from 'react-animations';
 import './backGroundEffect.css';
@@ -84,7 +84,23 @@ const IconContainer = styled.div`
   }
 `;
 
+function getWindowDimensions() {
+  const { innerWidth: width} = window;
+  return width
+}
+
 export default function Home() {
+    const [currentScreenWidth, setCurrentScreenWidth] = useState(getWindowDimensions());
+  
+    useEffect(() => {
+      function handleResize() {
+        setCurrentScreenWidth(getWindowDimensions());
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
     <TextContainer id="Home">
         <FlexContainer>
@@ -99,9 +115,15 @@ export default function Home() {
             </a>
           </IconContainer>
         </FlexContainer>
-        <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
+        {
+          currentScreenWidth < 2000 ? (
+            <>
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+            </>
+          ) : null
+        }
     </TextContainer>
     )
 }

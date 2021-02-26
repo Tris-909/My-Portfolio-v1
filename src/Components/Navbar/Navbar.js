@@ -26,12 +26,9 @@ const NavBarContainer = styled.div`
     align-items: stretch;
     width: 100%;
 
-    padding-right: 2rem;
-    padding-left: 2rem;
+    padding-right: 3vw;
+    padding-left: 3vw;
 
-    max-width: 1440px;
-    padding-right: 1rem;
-    padding-left: 1rem;
     margin-right: auto;
     margin-left: auto;
 `;
@@ -42,7 +39,7 @@ const NavBarBrand = styled.div`
 
 const Brand = styled(Link)`
     padding: 1.25rem 0rem 1rem 0rem;
-    font-size: 2.5rem;
+    font-size: 2vw;
     color: white;
     cursor: pointer;
     text-decoration: none;

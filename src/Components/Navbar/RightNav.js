@@ -37,7 +37,7 @@ const NavItem = styled(Link)`
     padding: 1.25rem 0rem 0.75rem 0rem;
     color: #fff;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 2vw;
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
