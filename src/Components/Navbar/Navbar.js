@@ -43,11 +43,40 @@ const Brand = styled(Link)`
     color: white;
     cursor: pointer;
     text-decoration: none;
+
+    @media (max-width: 2200px) {
+        font-size: 3rem;
+    }
 `;
 
+function getWindowDimensions() {
+    const { innerWidth: width} = window;
+    return width
+}  
+
 export default function Navbar() {
+    const [currentScreenWidth, setCurrentScreenWidth] = useState(getWindowDimensions());
     const [prevScrollPosition, setPrevScrollPosition] = useState(window.pageYOffset);
     const [visible, setVisible] = useState(true);
+
+    useEffect(() => {
+        function handleResize() {
+          setCurrentScreenWidth(getWindowDimensions());
+        }
+    
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+
+    useEffect(() => {
+        if (currentScreenWidth > 870) {
+            window.addEventListener("scroll", handleScroll);
+
+            return () => {
+                window.removeEventListener('scroll', handleScroll);
+            }
+        }
+    }, [window.pageYOffset])
 
     const handleScroll = () => {
         const currentScrollPosition = window.pageYOffset;
@@ -55,14 +84,6 @@ export default function Navbar() {
         setPrevScrollPosition(currentScrollPosition);
         setVisible(Newvisibility);
     }
-
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        }
-    }, [window.pageYOffset])
 
     return (
         <FixedNavBar visible={visible}>

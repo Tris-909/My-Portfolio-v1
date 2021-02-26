@@ -56,15 +56,20 @@ const NavItem = styled(Link)`
         background-size: 100% 2px, auto;
     }
 
-    @media (max-width: 750px) {
+    @media (max-width: 870px) {
         padding: 1rem;
         margin-right: 0px;
+
         &:not(:last-child) {
             margin-right: 0px;
         }
 
         font-size: 2rem;
         text-align: center;
+    }
+
+    @media (max-width: 2200px) {
+        font-size: 3rem;
     }
 `;
 
