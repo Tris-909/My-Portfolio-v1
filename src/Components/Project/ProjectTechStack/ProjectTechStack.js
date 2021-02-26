@@ -183,17 +183,6 @@ const SocialAppContainer = styled(GeneralStyleForMiniContainer)`
     }
 `;
 
-
-const Arrow = styled.div`
-    position: absolute;
-    right: ${props => props.name === 'tool' ? '-26%' : '-20%'};
-    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);   
-    background-color: white;
-    color: black;
-    padding: 1rem;
-    padding-left: 1.3rem;
-`;
-
 export default function ProjectTechStack({
     projectName
 }) {
@@ -201,7 +190,6 @@ export default function ProjectTechStack({
         return(
             <Container>
                 <MiniContainer>
-                    <Arrow>Client-Side</Arrow>
                    <span id="html5">HTML5</span> 
                    <span id="css3">CSS3</span> 
                    <span id="es6">ES6</span> 
@@ -210,14 +198,12 @@ export default function ProjectTechStack({
                    <span id="redux">Redux</span> 
                 </MiniContainer>
                 <ServerSideContainer>
-                    <Arrow>Server-Side</Arrow>
                     <span id="nodejs">NodeJS</span>
                     <span id='express'>Express</span>
                     <span id='mongoose'>Mongoose</span>
                     <span id='mongoDB'>NoSQL MongoDB</span>
                 </ServerSideContainer>
                 <ToolContainer>
-                    <Arrow name="tool">Tools & Libraries</Arrow>
                     <span id="git">Git / Github</span>
                     <span id="postman">POSTMAN</span>
                     <span id="react-boostrap">React Boostrap</span>
@@ -229,20 +215,17 @@ export default function ProjectTechStack({
         return(
             <Container>
                 <CMSContainer>
-                    <Arrow>Client-Side</Arrow>
                     <span id="html">HTML5</span>
                     <span id="css">CSS3</span>
                     <span id="javascript">JavaScript</span>
                     <span id="jquery">JQuery</span>
                 </CMSContainer>
                 <ServerSideCMS>
-                    <Arrow>Server-Side</Arrow>
                     <span id="php">PHP</span>
                     <span id="sql">MySQL</span>
                     <span id="apache">Apache</span>
                 </ServerSideCMS>
                 <ToolCMS>
-                    <Arrow name="tool">Tools & Libraries</Arrow>
                     <span id="cmsgit">Git</span>
                     <span id="boostrap">Boostrap</span>
                 </ToolCMS>
