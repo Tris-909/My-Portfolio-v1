@@ -104,6 +104,7 @@ export default function Projects() {
                     ProjectExplainForMobile="Full-stack CMS Blogs websites built using PHP and mySQL."
                     ProjectExplainOne="This is a PHP + mySQL project. I used MAMP and phpMyAdmin to create this web-application then deployed it to heroku." 
                     ProjectExplainTwo="This project allow users to sign in create blogs and if they are admin, they will have a separated page to see and control all the blogs..." 
+                    ProjectAdminCredential="tranminhtri9090 - Minhtri1"
                     ViewCodeLink="https://github.com/Tris-909/CMS-PHP" 
                     LiveDemoLink="https://shrouded-springs-90128.herokuapp.com/" 
                     ProjectPicture={[CMS_PHP1, CMS_PHP2, CMS_PHP3, CMS_PHP4]} 

@@ -64,12 +64,10 @@ export default function ProjectLeft({
                             <ProjectExplain>
                                 {ProjectExplainTwo}
                             </ProjectExplain>
-                            <ProjectCredential isShow={projectName === "E-Commerce Proshop" ? true : false}>
-                                <span style={{ fontWeight: 700 }}>Paypal Testing Account :</span> 
-                                <p style={{ marginTop: '6px', marginBottom: '12px' }}>{ProjectCredentials}</p>
-                                <span style={{ fontWeight: 700 }}>Admin Account :</span> 
-                                <p style={{ marginTop: '3px', marginBottom: '0px' }}>{ProjectAdminCredential}</p>
-                            </ProjectCredential>
+                            <ProjectCredential 
+                                projectName={projectName}  
+                                ProjectCredentials={ProjectCredentials}
+                                ProjectAdminCredential={ProjectAdminCredential} />
                             <ButtonContainer>
                                 <Button link={ViewCodeLink} content="View Code" />
                                 <Button link={LiveDemoLink} content="Live Demo" />

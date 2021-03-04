@@ -16,10 +16,20 @@ const ProjectCredentials = styled.div`
 `;
 
 export default function ProjectCredential(props) {
-    if (props.isShow) {
+    if (props.projectName === "E-Commerce Proshop") {
         return (
             <ProjectCredentials>
-                {props.children}
+                <span style={{ fontWeight: 700 }}>Paypal Testing Account :</span> 
+                <p style={{ marginTop: '6px', marginBottom: '12px' }}>{props.ProjectCredentials}</p>
+                <span style={{ fontWeight: 700 }}>Admin Account :</span> 
+                <p style={{ marginTop: '3px', marginBottom: '0px' }}>{props.ProjectAdminCredential}</p>
+            </ProjectCredentials>
+        );
+    } else if (props.projectName === "Blog CMS (PC Version)") {
+        return (
+            <ProjectCredentials>
+                <span style={{ fontWeight: 700 }}>Admin Account :</span> 
+                <p style={{ marginTop: '3px', marginBottom: '0px' }}>{props.ProjectAdminCredential}</p>
             </ProjectCredentials>
         );
     }
