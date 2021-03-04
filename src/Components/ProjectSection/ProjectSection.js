@@ -6,11 +6,13 @@ import ProjectRight from '../Project/Project/ProjectRight';
 import Seemore from '../Button/Seemore';
 
 //TODO: ProShop Image
-import ProShop1HighTexture from './ProShop Image/pic6.PNG';
-import ProShop7 from './ProShop Image/pic7.PNG';
-import ProShop2 from './ProShop Image/pic2-min.PNG';
-import ProShop5 from './ProShop Image/pic5-min.PNG';
-import ProShop8 from './ProShop Image/pic8.PNG';
+import ProShop1 from './ProShop Image/ProShop1-min.PNG';
+import ProShop2 from './ProShop Image/ProShop2-min.PNG';
+import ProShop3 from './ProShop Image/ProShop3-min.PNG';
+import ProShop4 from './ProShop Image/ProShop4-min.PNG';
+import ProShop5 from './ProShop Image/ProShop5-min.PNG';
+import ProShop6 from './ProShop Image/ProShop6-min.PNG';
+import ProShop7 from './ProShop Image/ProShop7-min.PNG';
 
 //TODO: Social Clone Image
 import Pic1 from './Social Clone/Pic1.PNG';
@@ -79,7 +81,7 @@ export default function Projects() {
                     isShow={true}
                     ViewCodeLink="https://github.com/Tris-909/Ecommerce-BradTraversy" 
                     LiveDemoLink="https://proshop-tris.herokuapp.com/" 
-                    ProjectPicture={[ProShop1HighTexture, ProShop2, ProShop7 ,ProShop5, ProShop8]} 
+                    ProjectPicture={[ProShop1, ProShop2, ProShop3 , ProShop4, ProShop5, ProShop6, ProShop7]} 
                 />
             </FadeAnimation>
 
