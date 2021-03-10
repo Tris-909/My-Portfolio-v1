@@ -74,7 +74,7 @@ export default function Projects() {
                 <ProjectLeft 
                     projectName="E-Commerce Proshop" 
                     ProjectExplainForMobile="FullStack E-Commerce Websites built using React and NodeJS, MongoDB. I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites."
-                    ProjectExplainOne="This is a MERN project. I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites to build real-world features and improve my React skill." 
+                    ProjectExplainOne="Many businesses need an online store to sell their products so I go to famous retailer websites like JB-Hifi, TheGoodGuy to implement features on their websites to build real-world features and improve my skills as a developer." 
                     ProjectExplainTwo="The Site is a combination between a content management system (admin page) and an e-commerce websites. Admin can perform CRUD operations through interfaces (Content Management System)." 
                     ProjectCredentials="sb-uj3sb3898726@personal.example.com - ZRy:}9n+"
                     ProjectAdminCredential="admin@email.com - 123"
