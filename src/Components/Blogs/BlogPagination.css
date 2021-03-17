@@ -5,6 +5,7 @@
   color: black;
   font-size: 2rem;
   text-decoration-style: none !important;
+  text-decoration-color: black;
 }
 
 .pagination li {
@@ -13,9 +14,10 @@
 }
 
 .pagination li a {
+  color: black !important;
   text-decoration: none;
 }
 
 .pagination li a:visited {
-  color: black;
+  color: black !important;
 }

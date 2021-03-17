@@ -64,6 +64,9 @@ const BlogItemTagContainer = styled.div`
 const LinkContainer = styled.a`
     font-size: 2.5rem;
     transition: all 0.5s;
+    text-decoration: none;
+    text-decoration-color: black;
+    color: black;
 
     &:hover {
         transform: translateX(10px);
@@ -105,7 +108,7 @@ const BlogItem = ({ title, date, numberOfLikes, link, tagsArray }) => {
                     })}
                 </BlogItemListTags>
                 <LinkContainer href={link} target="_" alt='link to blogs'>
-                    <i className="fas fa-caret-right"></i>
+                    <i className="fas fa-caret-right" style={{color: 'black'}}></i>
                 </LinkContainer>    
             </BlogItemBottomContainer>
         </BlogItemContainer>

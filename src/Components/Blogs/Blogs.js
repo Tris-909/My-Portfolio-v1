@@ -96,6 +96,7 @@ const ProfileLinkContainer = styled.a`
     justify-content: center;
     align-items: center;
     width: 85%;
+    color: black;
 `;
 
 const ProfileImage = styled.img`
