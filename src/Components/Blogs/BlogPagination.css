@@ -1,0 +1,21 @@
+.pagination {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  font-size: 2rem;
+  text-decoration-style: none !important;
+}
+
+.pagination li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.pagination li a {
+  text-decoration: none;
+}
+
+.pagination li a:visited {
+  color: black;
+}
