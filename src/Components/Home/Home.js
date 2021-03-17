@@ -113,6 +113,9 @@ export default function Home() {
             <a href="https://github.com/Tris-909" target="_blank" rel="noopener noreferrer">
               <i  className="fab fa-github" style={{color: 'white', fontSize: '2.5rem', cursor: 'pointer'}}></i>
             </a>
+            <a href="https://dev.to/tris909" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-dev" style={{color: 'white', fontSize: '2.5rem', cursor: 'pointer'}}></i>
+            </a>
           </IconContainer>
         </FlexContainer>
         {

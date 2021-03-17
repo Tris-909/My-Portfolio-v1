@@ -50,6 +50,13 @@ const BlogContainer = styled.div`
         border-radius: calc(2 * ${GradientWidth});
         animation: ${moveGradient} 4s alternate infinite;
     }
+
+    @media (max-width: 775px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 `;
 
 const ProfileContainer = styled.div`
