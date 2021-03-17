@@ -73,6 +73,8 @@ const IconContainer = styled.div`
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
+  position: relative;
+  left: -2%;
 
   a {
     margin-right: 25%;
@@ -80,7 +82,8 @@ const IconContainer = styled.div`
 
   @media (max-width: 870px) {
     margin-left: 10%;
-
+    position: inherit;
+    left: 0%;
   }
 `;
 

@@ -119,8 +119,9 @@ export default function Aboutme() {
                 <TextArea>
                     <Title >About me :</Title>
                     <BlackText><i className="fas fa-angle-right"></i> Hi Again, my full name is Tri Minh Tran and I love technologies and coffee.</BlackText>
-                    <BlackText><i className="fas fa-angle-right"></i> I have experience of building websites or web-app using HTML, SCSS, React, ...</BlackText>
-                    <BlackText><i className="fas fa-angle-right"></i> I am always open to new opportunities to improve myself as a developer.</BlackText>
+                    <BlackText><i className="fas fa-angle-right"></i> I enjoy writing and reading blogs when I am free.</BlackText>
+                    <BlackText><i className="fas fa-angle-right"></i> I have experience of building websites or web-app specialized in React</BlackText>
+                    <BlackText><i className="fas fa-angle-right"></i> Currently I am a FullStack Developer at SendFX.</BlackText>
                 </TextArea>
             </WhiteBackground>
             <BlackBackground>
@@ -133,7 +134,7 @@ export default function Aboutme() {
                         <WhiteText> JavaScript (ES6+)</WhiteText>
                         <WhiteText> React, React-Router, Redux</WhiteText>
                         <WhiteText> AJAX, RESTful APIs</WhiteText>
-                        <WhiteText> Git/ Github</WhiteText>
+                        <WhiteText> Git / Github</WhiteText>
                         <WhiteText> Responsive Layout</WhiteText>
                     </SkillsContainer>
                     <WhiteText> Experience with some CSS frameworks : Styled-Components, Material-UI, React-Boostrap,...</WhiteText>

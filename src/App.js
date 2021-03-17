@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 
+import LoaderScreen from './Components/LoaderScreen/LoaderScreen';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Projects from './Components/ProjectSection/ProjectSection';
@@ -25,17 +26,32 @@ const Background = styled.div`
 `;
 
 function App() {
-  return (
-  <Background>
-    <Navbar /> 
-    <Home />
-    <Projects /> 
-    <Aboutme/>
-    <Blog /> 
-    <ContactMe /> 
-    <Footer />
-  </Background>
-  );
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000);
+  }, []);
+  
+  return(
+    <>
+      {
+        loading ? (
+          <LoaderScreen />
+        ) : (
+          <Background>
+            <Navbar /> 
+            <Home />
+            <Projects /> 
+            <Aboutme/>
+            <Blog /> 
+            <ContactMe /> 
+            <Footer />
+          </Background>
+        )}
+    </>
+  )
 }
 
 export default App;

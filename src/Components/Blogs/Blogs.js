@@ -181,19 +181,24 @@ const Blog = () => {
                             );
                         })
                     }
-                    <PaginationContainer>
-                        <Pagination
-                          activePage={currentPage}
-                          itemsCountPerPage={3}
-                          totalItemsCount={blogs.length}
-                          pageRangeDisplayed={3}
-                          hideFirstLastPages={true}
-                          onChange={(pageNumberClicked) => onPaginationChangeHandler(pageNumberClicked)}
-                          itemClass={{
-                              textDecoration: 'none'
-                          }}
-                        />
-                    </PaginationContainer>
+                    {
+                        blogs.length <= 3 ? null : (
+                        <PaginationContainer>
+                            <Pagination
+                              activePage={currentPage}
+                              itemsCountPerPage={3}
+                              totalItemsCount={blogs.length}
+                              pageRangeDisplayed={3}
+                              hideFirstLastPages={true}
+                              onChange={(pageNumberClicked) => onPaginationChangeHandler(pageNumberClicked)}
+                              itemClass={{
+                                  textDecoration: 'none'
+                              }}
+                            />
+                        </PaginationContainer>
+                        )
+                    }
+                    
                 </BlogListFlexContainer>
             </BlogListContainer>
         </BlogContainer>

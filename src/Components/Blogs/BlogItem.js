@@ -93,7 +93,10 @@ const BlogItem = ({ title, date, numberOfLikes, link, tagsArray }) => {
                     <HeartContainer>{numberOfLikes}</HeartContainer>
                     <i className="fas fa-heart" style={{color: '#db1240'}}></i>
                 </div>
-                <div style={{marginLeft: '1rem'}}>
+                <DateContainer>
+                    -
+                </DateContainer>
+                <div>
                     <DateContainer>{date}</DateContainer>
                 </div>
             </BlogItemDateAndLikes>
@@ -102,7 +105,7 @@ const BlogItem = ({ title, date, numberOfLikes, link, tagsArray }) => {
                     {tagsArray.map((tag, index) => {
                         return(
                             <BlogItemTagContainer key={index}>
-                                {tag}
+                                # {tag}
                             </BlogItemTagContainer>
                         );
                     })}
