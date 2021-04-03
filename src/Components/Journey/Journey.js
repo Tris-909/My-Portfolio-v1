@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
@@ -21,12 +21,28 @@ const Title = styled.div`
     font-size: 4.25rem;
 `;
 
+function getWindowDimensions() {
+  const { innerWidth: width} = window;
+  return width
+}
+
 const Timeline = () => {
+  const [currentScreenWidth, setCurrentScreenWidth] = useState(getWindowDimensions());
+  
+  useEffect(() => {
+    function handleResize() {
+      setCurrentScreenWidth(getWindowDimensions());
+    }
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
     return(
         <>
         <Title id="Journey">My Journey</Title>
 
-        <VerticalTimeline className="root">
+        <VerticalTimeline className="root" animate={currentScreenWidth > 1170 ? true : false}>
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               contentStyle={{ background: '#30302e', color: '#fff', boxShadow: 'none' }}

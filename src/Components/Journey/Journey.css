@@ -15,12 +15,12 @@
   box-shadow: unset;
   border-radius: 45px;
   top: 5%;
-  left: 51.2%;
+  left: 51.2% !important;
 }
 
 @media only screen and (max-width: 1170px) {
   .OutaIcon {
-    left: 0.8%;
+    left: 0.4% !important;
   }
 }
 
