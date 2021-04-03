@@ -20,6 +20,7 @@
     "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.1",
     "react-text-loop": "^2.3.0",
+    "react-vertical-timeline-component": "^3.3.3",
     "styled-components": "^5.1.1"
   },
   "scripts": {

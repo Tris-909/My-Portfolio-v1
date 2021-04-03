@@ -85,6 +85,9 @@ export default function RightNav({open}) {
     return (
     <NavBarOptions>
         <NavBarMenuItems open={open}>
+            <NavItem activeClass="active" to="Journey" spy={true} smooth={true} offset={-100} duration={500}>
+                Journey
+            </NavItem>
             <NavItem activeClass="active" to="Projects" spy={true} smooth={true} offset={-100} duration={500}>
                 Projects
             </NavItem>

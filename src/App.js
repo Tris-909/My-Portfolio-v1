@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import LoaderScreen from './Components/LoaderScreen/LoaderScreen';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
+import Timeline from './Components/Journey/Journey';
 import Projects from './Components/ProjectSection/ProjectSection';
 import Aboutme from './Components/Aboutme/Aboutme';
 import Blog from './Components/Blogs/Blogs';
@@ -43,6 +44,7 @@ function App() {
           <Background>
             <Navbar /> 
             <Home />
+            <Timeline />
             <Projects /> 
             <Aboutme/>
             <Blog /> 

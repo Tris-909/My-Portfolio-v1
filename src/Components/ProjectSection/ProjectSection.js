@@ -50,9 +50,10 @@ const Container = styled.div`
 const IntroText = styled.div`
     color: white;
     border-radius: 10px;
-    font-size: 3.75em;
+    font-size: 4.25em;
+    margin-top: 2rem;
     margin-bottom: 55px;
-    margin-left: 10%;
+    text-align: center;
 `;
 
 const Hidden = styled.div`
