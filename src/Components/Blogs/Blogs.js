@@ -139,7 +139,7 @@ const Blog = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const {data} = await axios.get(`https://dev.to/api/articles?username=tris909&per_page=9&page=${currentPage}`);
+            const {data} = await axios.get(`https://dev.to/api/articles?username=tris909&per_page=3&page=0`);
             setBlogs(data);
         }
 
@@ -147,8 +147,8 @@ const Blog = () => {
     }, []);
 
     const onPaginationChangeHandler = async (pageNumberClicked) => {
-        setCurrentPage(pageNumberClicked)
-        const {data} = await axios.get(`https://dev.to/api/articles?username=tris909&per_page=3&page=${currentPage}`);
+        setCurrentPage(pageNumberClicked);
+        const {data} = await axios.get(`https://dev.to/api/articles?username=tris909&per_page=3&page=${pageNumberClicked}`);
         setBlogs(data);
     }
 
@@ -181,24 +181,20 @@ const Blog = () => {
                             );
                         })
                     }
-                    {
-                        blogs.length <= 3 ? null : (
-                        <PaginationContainer>
-                            <Pagination
-                              activePage={currentPage}
-                              itemsCountPerPage={3}
-                              totalItemsCount={blogs.length}
-                              pageRangeDisplayed={3}
-                              hideFirstLastPages={true}
-                              onChange={(pageNumberClicked) => onPaginationChangeHandler(pageNumberClicked)}
-                              itemClass={{
-                                  textDecoration: 'none'
-                              }}
-                            />
-                        </PaginationContainer>
-                        )
-                    }
-                    
+
+                    <PaginationContainer>
+                        <Pagination
+                          activePage={currentPage}
+                          itemsCountPerPage={3}
+                          totalItemsCount={4}
+                          pageRangeDisplayed={3}
+                          hideFirstLastPages={true}
+                          hideNavigation={true}
+                          onChange={(pageNumberClicked) => onPaginationChangeHandler(pageNumberClicked)}
+                          activeLinkClass={`pageActive`}
+                        />
+                    </PaginationContainer>
+
                 </BlogListFlexContainer>
             </BlogListContainer>
         </BlogContainer>

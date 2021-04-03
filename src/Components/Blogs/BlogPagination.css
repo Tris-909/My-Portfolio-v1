@@ -21,3 +21,7 @@
 .pagination li a:visited {
   color: black !important;
 }
+
+.pageActive {
+  text-decoration: underline !important;
+}
