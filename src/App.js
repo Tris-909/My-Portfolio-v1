@@ -6,7 +6,7 @@ import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
 import Timeline from './Components/Journey/Journey';
 import Projects from './Components/ProjectSection/ProjectSection';
-import Aboutme from './Components/Aboutme/Aboutme';
+import AboutmeV2 from './Components/Aboutme/AboutmeV2';
 import Blog from './Components/Blogs/Blogs';
 import ContactMe from './Components/ContactMe/ContactMe';
 import Footer from './Components/Footer/Footer';
@@ -46,7 +46,7 @@ function App() {
             <Home />
             <Timeline />
             <Projects /> 
-            <Aboutme/>
+            <AboutmeV2/>
             <Blog /> 
             <ContactMe /> 
             <Footer />
